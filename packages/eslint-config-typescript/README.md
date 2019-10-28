@@ -8,15 +8,19 @@ After installing the package, append the following to your [ESLint configuration
 
 ```json
 {
+  // Make sure to put it last, letting it override other configs
   "extends": "@kripod/eslint-config-typescript"
 }
 ```
 
-To enable additional rules requiring type checking, use the configuration below, instead of the previous one:
+To enable additional rules requiring type checking, use the configuration below:
 
 ```jsonc
 {
   // Please be aware that this may be slower to run
-  "extends": "@kripod/eslint-config-typescript/strict"
+  "extends": [
+    "@kripod/eslint-config-typescript",
+    "@kripod/eslint-config-typescript/strict"
+  ]
 }
 ```

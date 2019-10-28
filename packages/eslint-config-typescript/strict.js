@@ -1,7 +1,5 @@
 module.exports = {
-  extends: [
-    './normal',
-    './rules/@typescript-eslint/requiring-type-checking',
-    './important',
-  ].map(require.resolve),
+  extends: ['./rules/@typescript-eslint/requiring-type-checking'].map(
+    require.resolve,
+  ),
 };
