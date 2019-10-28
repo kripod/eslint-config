@@ -6,7 +6,7 @@ Strict linter configuration for TypeScript.
 
 After installing the package, append the following to your [ESLint configuration](https://eslint.org/docs/user-guide/configuring):
 
-```json
+```jsonc
 {
   // Make sure to put it last, letting it override other configs
   "extends": "@kripod/eslint-config-typescript"
