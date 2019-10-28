@@ -6,6 +6,10 @@ module.exports = {
   rules: {
     'unicorn/custom-error-definition': 'error',
     'unicorn/explicit-length-check': ['error', { 'non-zero': 'greater-than' }],
+    'unicorn/no-fn-reference-in-iterator': 'error',
+    'unicorn/no-unsafe-regex': 'error',
+    'unicorn/no-unused-properties': 'error',
+    'unicorn/prevent-abbreviations': 'off',
 
     // A base filename should exactly match the name of its default export
     // See: https://github.com/airbnb/javascript#naming--filename-matches-export
@@ -14,9 +18,7 @@ module.exports = {
       { cases: { camelCase: true, pascalCase: true, kebabCase: true } },
     ],
 
-    'unicorn/no-fn-reference-in-iterator': 'error',
-
-    // Modify built-in rule to be compatible with `unicorn/no-unreadable-array-destructuring`
+    // Improve compatibility with `unicorn/no-unreadable-array-destructuring`
     // See: https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/no-unreadable-array-destructuring.md#note
     'prefer-destructuring': [
       'error',
@@ -32,9 +34,5 @@ module.exports = {
         },
       },
     ],
-
-    'unicorn/no-unsafe-regex': 'error',
-    'unicorn/no-unused-properties': 'error',
-    'unicorn/prevent-abbreviations': 'off',
   },
 };
