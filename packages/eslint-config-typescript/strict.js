@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./rules/@typescript-eslint/requiring-type-checking'].map(
-    require.resolve,
+  extends: require.resolve(
+    './rules/@typescript-eslint/requiring-type-checking',
   ),
 };

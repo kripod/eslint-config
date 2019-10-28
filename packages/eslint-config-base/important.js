@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['./rules/prettier'].map(require.resolve),
+  extends: require.resolve('./rules/prettier'),
 };
