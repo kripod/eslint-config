@@ -7,7 +7,7 @@
     "commit": "git-cz",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,yml,md}\"",
     "postinstall": "lerna bootstrap",
-    "publish": "lerna publish from-git --contents pkg --create-release github --yes",
+    "publish": "lerna publish from-git --create-release github --yes",
     "release": "lerna version"
   },
   "devDependencies": {
