@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.4](https://github.com/kripod/eslint-config/compare/@kripod/eslint-config-base@2.0.3...@kripod/eslint-config-base@2.0.4) (2019-10-28)
+
+**Note:** Version bump only for package @kripod/eslint-config-base
+
 ## [2.0.3](https://github.com/kripod/eslint-config/compare/@kripod/eslint-config-base@2.0.2...@kripod/eslint-config-base@2.0.3) (2019-10-28)
 
 **Note:** Version bump only for package @kripod/eslint-config-base
