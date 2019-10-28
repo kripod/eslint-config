@@ -1,0 +1,16 @@
+{
+  "name": "@kripod/eslint-config-typescript",
+  "version": "1.0.0",
+  "description": "Strict linter configuration for TypeScript.",
+  "repository": "github:kripod/eslint-config",
+  "author": "Kristóf Poduszló <kripod@protonmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@kripod/eslint-config-base": "~2.0.2",
+    "@typescript-eslint/eslint-plugin": "~2.5.0",
+    "@typescript-eslint/parser": "~2.5.0"
+  }
+}
