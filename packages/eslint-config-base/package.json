@@ -5,6 +5,9 @@
   "repository": "github:kripod/eslint-config",
   "author": "Kristóf Poduszló <kripod@protonmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "eslint": "^6.4.0"
   },
