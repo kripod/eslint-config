@@ -1,5 +1,5 @@
 module.exports = {
-  extends: require.resolve('./rules/airbnb'),
+  extends: ['./rules/airbnb', './rules/react'].map(require.resolve),
 
   env: {
     browser: true,
