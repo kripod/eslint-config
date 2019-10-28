@@ -1,0 +1,20 @@
+language: node_js
+
+script:
+  - yarn lint
+
+deploy:
+  - provider: npm
+    edge:
+      branch: master
+    run_script: publish
+    on:
+      tags: true
+  - provider: npm
+    edge:
+      branch: master
+    run_script: publish
+    registry: https://npm.pkg.github.com/@kripod
+    api_token: $GH_TOKEN
+    on:
+      tags: true
