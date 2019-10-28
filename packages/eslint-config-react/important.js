@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['@kripod/eslint-config-base/important', 'prettier/react'].map(
+  extends: ['@kripod/eslint-config-base/important', './rules/prettier'].map(
     require.resolve,
   ),
 };

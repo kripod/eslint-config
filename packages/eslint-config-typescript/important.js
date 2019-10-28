@@ -1,6 +1,5 @@
 module.exports = {
-  extends: [
-    '@kripod/eslint-config-base/important',
-    'prettier/@typescript-eslint',
-  ].map(require.resolve),
+  extends: ['@kripod/eslint-config-base/important', './rules/prettier'].map(
+    require.resolve,
+  ),
 };
