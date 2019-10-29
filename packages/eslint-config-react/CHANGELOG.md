@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/kripod/eslint-config/compare/@kripod/eslint-config-react@1.0.3...@kripod/eslint-config-react@1.0.4) (2019-10-29)
+
+**Note:** Version bump only for package @kripod/eslint-config-react
+
 ## [1.0.3](https://github.com/kripod/eslint-config/compare/@kripod/eslint-config-react@1.0.2...@kripod/eslint-config-react@1.0.3) (2019-10-28)
 
 ### Bug Fixes

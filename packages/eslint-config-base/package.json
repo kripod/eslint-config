@@ -1,6 +1,6 @@
 {
   "name": "@kripod/eslint-config-base",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Strict baseline linter configuration for JavaScript.",
   "repository": "github:kripod/eslint-config",
   "author": "Kristóf Poduszló <kripod@protonmail.com>",
