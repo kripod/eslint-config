@@ -4,12 +4,14 @@ module.exports = {
   extends: 'plugin:unicorn/recommended',
 
   rules: {
+    'unicorn/import-index': 'off',
+    'unicorn/prevent-abbreviations': 'off',
+
     'unicorn/custom-error-definition': 'error',
     'unicorn/explicit-length-check': ['error', { 'non-zero': 'greater-than' }],
     'unicorn/no-fn-reference-in-iterator': 'error',
     'unicorn/no-unsafe-regex': 'error',
     'unicorn/no-unused-properties': 'error',
-    'unicorn/prevent-abbreviations': 'off',
 
     // A base filename should exactly match the name of its default export
     // See: https://github.com/airbnb/javascript#naming--filename-matches-export
