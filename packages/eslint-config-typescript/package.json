@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@kripod/eslint-config-base": "^2.0.5",
-    "@typescript-eslint/eslint-plugin": "~2.5.0",
-    "@typescript-eslint/parser": "~2.5.0"
+    "@typescript-eslint/eslint-plugin": "^2.5.0",
+    "@typescript-eslint/parser": "^2.5.0"
   }
 }
