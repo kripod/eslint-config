@@ -1,0 +1,9 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@3.0.3/schema.json",
+  "changelog": [
+    "@changesets/changelog-github",
+    { "repo": "kripod/eslint-config-lean" }
+  ],
+  "access": "public",
+  "baseBranch": "main"
+}

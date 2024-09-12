@@ -1,0 +1,60 @@
+{
+  "name": "eslint-config-lean",
+  "version": "0.0.0",
+  "description": "TODO",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "homepage": "https://github.com/kripod/eslint-config-lean#readme",
+  "bugs": "https://github.com/kripod/eslint-config-lean/issues",
+  "repository": "kripod/eslint-config-lean",
+  "license": "MIT",
+  "author": "Kristóf Poduszló (https://www.kripod.dev/)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/index.d.ts",
+        "default": "./dist/commonjs/index.js"
+      }
+    }
+  },
+  "main": "./dist/commonjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/commonjs/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "prepare": "tshy",
+    "clean": "git clean --interactive -dx --exclude node_modules/",
+    "lint": "pnpm run \"/^lint:(?!fix)/\"",
+    "lint:format": "prettier --check .",
+    "lint:types": "tsc --noEmit",
+    "lint:fix": "pnpm run \"/^lint:fix:/\"",
+    "lint:fix:format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "0.5.0",
+    "@changesets/cli": "2.27.8",
+    "@total-typescript/tsconfig": "1.0.4",
+    "eslint": "9.10.0",
+    "prettier": "3.3.3",
+    "tshy": "3.0.2",
+    "typescript": "5.6.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
+  "packageManager": "pnpm@9.10.0",
+  "tshy": {
+    "exports": {
+      ".": "./src/index.ts"
+    }
+  }
+}

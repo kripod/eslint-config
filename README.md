@@ -1,0 +1,3 @@
+# eslint-config-lean
+
+TODO
