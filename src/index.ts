@@ -1,6 +1,7 @@
 import type { Linter } from "eslint";
+import type { ESLintRules } from "eslint/rules";
 
-export default [
+export const base = [
   {
     rules: {
       "accessor-pairs": "off",
@@ -201,5 +202,7 @@ export default [
       "vars-on-top": "off",
       yoda: "off",
     },
-  },
-] satisfies Linter.Config[];
+  } satisfies Linter.Config<ESLintRules>,
+];
+
+export default [...base] satisfies Linter.Config[];
