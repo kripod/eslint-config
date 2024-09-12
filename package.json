@@ -13,20 +13,17 @@
   "author": "Kristóf Poduszló (https://www.kripod.dev/)",
   "type": "module",
   "exports": {
-    ".": {
+    "./base": {
       "import": {
-        "types": "./dist/esm/index.d.ts",
-        "default": "./dist/esm/index.js"
+        "types": "./dist/esm/base.d.ts",
+        "default": "./dist/esm/base.js"
       },
       "require": {
-        "types": "./dist/commonjs/index.d.ts",
-        "default": "./dist/commonjs/index.js"
+        "types": "./dist/commonjs/base.d.ts",
+        "default": "./dist/commonjs/base.js"
       }
     }
   },
-  "main": "./dist/commonjs/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/commonjs/index.d.ts",
   "files": [
     "dist/"
   ],
@@ -54,7 +51,7 @@
   "packageManager": "pnpm@9.10.0",
   "tshy": {
     "exports": {
-      ".": "./src/index.ts"
+      "./base": "./src/base.ts"
     }
   }
 }
