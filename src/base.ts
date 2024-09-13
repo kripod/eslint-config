@@ -4,15 +4,27 @@ import type { ESLintRules } from "eslint/rules";
 export default [
   {
     rules: {
-      "accessor-pairs": "off",
-      "array-callback-return": "off",
-      "arrow-body-style": "off",
-      "block-scoped-var": "off",
-      camelcase: "off",
+      "accessor-pairs": "warn",
+      "array-callback-return": "warn",
+      "arrow-body-style": "warn",
+      "block-scoped-var": "error",
+      camelcase: [
+        "warn",
+        {
+          properties: "never",
+          ignoreDestructuring: true,
+          // TODO: ignoreImports: true,
+          // TODO: ignoreGlobals: true,
+        },
+      ],
       "capitalized-comments": "off",
       "class-methods-use-this": "off",
       complexity: "off",
+
+      // TS has `noImplicitReturns` with control-flow analysis
+      // https://github.com/typescript-eslint/typescript-eslint/issues/4510
       "consistent-return": "off",
+
       "consistent-this": "off",
       "constructor-super": "error",
       curly: "off",
@@ -51,7 +63,7 @@ export default [
       "no-class-assign": "error",
       "no-compare-neg-zero": "error",
       "no-cond-assign": "error",
-      "no-console": "off",
+      "no-console": "warn",
       "no-const-assign": "error",
       "no-constant-binary-expression": "error",
       "no-constant-condition": "error",
