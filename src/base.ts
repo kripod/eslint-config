@@ -21,7 +21,7 @@ export default [
       "class-methods-use-this": "off",
       complexity: "off",
 
-      // TS has 'noImplicitReturns' with control-flow analysis
+      // Covered by 'noImplicitReturns' of TypeScript
       // https://github.com/typescript-eslint/typescript-eslint/issues/4510
       "consistent-return": "off",
 
@@ -97,14 +97,23 @@ export default [
       "no-eq-null": "off",
       "no-eval": "error",
       "no-ex-assign": "error",
-      "no-extend-native": "off",
-      "no-extra-bind": "off",
-      "no-extra-boolean-cast": "error",
-      "no-extra-label": "off",
+      "no-extend-native": "error",
+      "no-extra-bind": "warn",
+      "no-extra-boolean-cast": [
+        "warn",
+        // TODO: { enforceForInnerExpressions: true }
+      ],
+      "no-extra-label": "warn",
       "no-fallthrough": "error",
       "no-func-assign": "error",
       "no-global-assign": "error",
-      "no-implicit-coercion": "off",
+      "no-implicit-coercion": [
+        "warn",
+        {
+          disallowTemplateShorthand: true,
+          allow: ["!!"], // Narrows types by truthiness
+        },
+      ],
       "no-implicit-globals": "off",
       "no-implied-eval": "off",
       "no-import-assign": "error",
