@@ -72,7 +72,10 @@ export default [
       "no-constant-condition": "error",
       "no-constructor-return": "error",
       "no-continue": "error",
+
+      // TODO: Replace with 'regexp/no-control-character'
       "no-control-regex": "error",
+
       "no-debugger": "error",
       "no-delete-var": "error",
       "no-div-regex": "off",
@@ -81,15 +84,18 @@ export default [
       "no-dupe-else-if": "error",
       "no-dupe-keys": "error",
       "no-duplicate-case": "error",
-      "no-duplicate-imports": "off",
-      "no-else-return": "off",
-      "no-empty": "error",
-      "no-empty-character-class": "error",
+
+      // TODO: Replace with 'import/no-duplicates'
+      "no-duplicate-imports": "error",
+
+      "no-else-return": ["warn", { allowElseIf: false }],
+      "no-empty": ["warn", { allowEmptyCatch: true }],
+      "no-empty-character-class": "warn",
       "no-empty-function": "off",
-      "no-empty-pattern": "error",
-      "no-empty-static-block": "error",
+      "no-empty-pattern": "warn",
+      "no-empty-static-block": "warn",
       "no-eq-null": "off",
-      "no-eval": "off",
+      "no-eval": "error",
       "no-ex-assign": "error",
       "no-extend-native": "off",
       "no-extra-bind": "off",
