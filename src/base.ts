@@ -5,7 +5,7 @@ export default [
   {
     rules: {
       "accessor-pairs": "warn",
-      "array-callback-return": "warn",
+      "array-callback-return": "error",
       "arrow-body-style": "warn",
       "block-scoped-var": "error",
       camelcase: [
@@ -21,25 +21,28 @@ export default [
       "class-methods-use-this": "off",
       complexity: "off",
 
-      // TS has `noImplicitReturns` with control-flow analysis
+      // TS has 'noImplicitReturns' with control-flow analysis
       // https://github.com/typescript-eslint/typescript-eslint/issues/4510
       "consistent-return": "off",
 
       "consistent-this": "off",
       "constructor-super": "error",
-      curly: "off",
+      curly: "warn",
+
+      // Covered by '@typescript-eslint/switch-exhaustiveness-check'
       "default-case": "off",
-      "default-case-last": "off",
-      "default-param-last": "off",
-      "dot-notation": "off",
-      eqeqeq: "off",
+
+      "default-case-last": "error",
+      "default-param-last": "error",
+      "dot-notation": "warn",
+      eqeqeq: ["error", "always", { null: "ignore" }],
       "for-direction": "error",
       "func-name-matching": "off",
-      "func-names": "off",
-      "func-style": "off",
+      "func-names": ["warn", "as-needed"],
+      "func-style": ["warn", "declaration", { allowArrowFunctions: true }],
       "getter-return": "error",
-      "grouped-accessor-pairs": "off",
-      "guard-for-in": "off",
+      "grouped-accessor-pairs": ["warn", "getBeforeSet"],
+      "guard-for-in": "error",
       "id-denylist": "off",
       "id-length": "off",
       "id-match": "off",
