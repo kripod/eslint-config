@@ -21,7 +21,7 @@ export default [
       "class-methods-use-this": "off",
       complexity: "off",
 
-      // Covered by 'noImplicitReturns' of TypeScript
+      // Covered by `noImplicitReturns` of TypeScript
       // https://github.com/typescript-eslint/typescript-eslint/issues/4510
       "consistent-return": "off",
 
@@ -90,7 +90,10 @@ export default [
 
       "no-else-return": ["warn", { allowElseIf: false }],
       "no-empty": ["warn", { allowEmptyCatch: true }],
+
+      // TODO: Disable when using 'eslint-plugin-regexp'
       "no-empty-character-class": "warn",
+
       "no-empty-function": "off",
       "no-empty-pattern": "warn",
       "no-empty-static-block": "warn",
@@ -114,28 +117,37 @@ export default [
           allow: ["!!"], // Narrows types by truthiness
         },
       ],
-      "no-implicit-globals": "off",
-      "no-implied-eval": "off",
+      "no-implicit-globals": "error",
+      "no-implied-eval": "error",
       "no-import-assign": "error",
       "no-inline-comments": "off",
-      "no-inner-declarations": "off",
+      "no-inner-declarations": "error",
+
+      // TODO: Disable when using 'eslint-plugin-regexp'
       "no-invalid-regexp": "error",
-      "no-invalid-this": "off",
+
+      "no-invalid-this": "error",
       "no-irregular-whitespace": "error",
-      "no-iterator": "off",
-      "no-label-var": "off",
-      "no-labels": "off",
-      "no-lone-blocks": "off",
-      "no-lonely-if": "off",
-      "no-loop-func": "off",
+      "no-iterator": "error",
+      "no-label-var": "error",
+      "no-labels": ["error", { allowLoop: true, allowSwitch: true }],
+      "no-lone-blocks": "warn",
+      "no-lonely-if": "warn",
+      "no-loop-func": "error",
       "no-loss-of-precision": "error",
       "no-magic-numbers": "off",
       "no-misleading-character-class": "error",
-      "no-multi-assign": "off",
-      "no-multi-str": "off",
+      "no-multi-assign": "error",
+      "no-multi-str": "error",
       "no-negated-condition": "off",
+
+      // Curious ternaries via Prettier solve readability
+      // https://github.com/prettier/prettier/pull/13183
       "no-nested-ternary": "off",
-      "no-new": "off",
+
+      // Validation in `try...catch` may omit assignment/comparison
+      "no-new": "warn",
+
       "no-new-func": "off",
       "no-new-native-nonconstructor": "error",
       "no-new-wrappers": "off",
@@ -187,7 +199,10 @@ export default [
       "no-unused-vars": "error",
       "no-use-before-define": "off",
       "no-useless-assignment": "off",
+
+      // TODO: Disable when using 'eslint-plugin-regexp'
       "no-useless-backreference": "error",
+
       "no-useless-call": "off",
       "no-useless-catch": "error",
       "no-useless-computed-key": "off",
