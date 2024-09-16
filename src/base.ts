@@ -148,16 +148,20 @@ export default [
       // Validation in `try...catch` may omit assignment/comparison
       "no-new": "warn",
 
-      "no-new-func": "off",
+      "no-new-func": "error",
       "no-new-native-nonconstructor": "error",
-      "no-new-wrappers": "off",
+      "no-new-wrappers": "error",
       "no-nonoctal-decimal-escape": "error",
       "no-obj-calls": "error",
-      "no-object-constructor": "off",
+      "no-object-constructor": "error",
       "no-octal": "error",
-      "no-octal-escape": "off",
-      "no-param-reassign": "off",
-      "no-plusplus": "off",
+      "no-octal-escape": "error",
+      "no-param-reassign": ["error", { props: true }],
+
+      // Postfix operators have a side effect, while `+=`/`-=` are unambiguous
+      // https://www.informit.com/articles/article.aspx?p=2425867#:~:text=%233%3A%20I%20rate%20plus%2Dplus%20a%20minus%2Dminus
+      "no-plusplus": "error",
+
       "no-promise-executor-return": "off",
       "no-proto": "off",
       "no-prototype-builtins": "error",
