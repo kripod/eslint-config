@@ -1,3 +1,4 @@
+import confusingBrowserGlobals from "confusing-browser-globals";
 import type { Linter } from "eslint";
 import type { ESLintRules } from "eslint/rules";
 
@@ -162,15 +163,52 @@ export default [
       // https://www.informit.com/articles/article.aspx?p=2425867#:~:text=%233%3A%20I%20rate%20plus%2Dplus%20a%20minus%2Dminus
       "no-plusplus": "error",
 
-      "no-promise-executor-return": "off",
-      "no-proto": "off",
+      "no-promise-executor-return": "error",
+      "no-proto": "error",
       "no-prototype-builtins": "error",
       "no-redeclare": "error",
       "no-regex-spaces": "error",
-      "no-restricted-exports": "off",
-      "no-restricted-globals": "off",
+      "no-restricted-exports": [
+        "error",
+        {
+          restrictedNamedExports: [
+            // Ambiguous with dynamic imports
+            // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/import#module_namespace_object
+            "then",
+          ],
+          restrictDefaultExports: {
+            // Prefer `export default` expressions
+            named: true,
+
+            // Avoid re-exporting entire modules as is
+            namespaceFrom: true,
+          },
+        },
+      ],
+      "no-restricted-globals": ["error", ...confusingBrowserGlobals],
+
+      // TODO: Adopt 'unicorn/prefer-node-protocol'
       "no-restricted-imports": "off",
-      "no-restricted-properties": "off",
+
+      "no-restricted-properties": [
+        "error",
+        {
+          property: "__defineGetter__",
+          message: "Use 'Object.defineProperty' instead.",
+        },
+        {
+          property: "__defineSetter__",
+          message: "Use 'Object.defineProperty' instead.",
+        },
+        {
+          property: "__lookupGetter__",
+          message: "Use 'Object.getOwnPropertyDescriptor' instead.",
+        },
+        {
+          property: "__lookupSetter__",
+          message: "Use 'Object.getOwnPropertyDescriptor' instead.",
+        },
+      ],
       "no-restricted-syntax": "off",
       "no-return-assign": "off",
       "no-script-url": "off",

@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      confusing-browser-globals:
+        specifier: ^1.0.11
+        version: 1.0.11
     devDependencies:
       '@changesets/changelog-github':
         specifier: 0.5.0
@@ -17,6 +21,9 @@ importers:
       '@total-typescript/tsconfig':
         specifier: 1.0.4
         version: 1.0.4
+      '@types/confusing-browser-globals':
+        specifier: 1.0.3
+        version: 1.0.3
       eslint:
         specifier: 9.10.0
         version: 9.10.0
@@ -167,6 +174,9 @@ packages:
   '@total-typescript/tsconfig@1.0.4':
     resolution: {integrity: sha512-fO4ctMPGz1kOFOQ4RCPBRBfMy3gDn+pegUfrGyUFRMv/Rd0ZM3/SHH3hFCYG4u6bPLG8OlmOGcBLDexvyr3A5w==}
 
+  '@types/confusing-browser-globals@1.0.3':
+    resolution: {integrity: sha512-q+6axdE3RyjrSsy2ONE4UpF89rwOfpoMBP3lqJ+OzLuOeYHwP+o2GITzuleKb1UT3FSYybO8QmeACgyHleu2CA==}
+
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
@@ -273,6 +283,9 @@ packages:
 
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
+
+  confusing-browser-globals@1.0.11:
+    resolution: {integrity: sha512-JsPKdmh8ZkmnHxDk55FZ1TqVLvEQTvoByJZRN9jzI0UjxK/QgAmsphz7PGtqgPieQZ/CQcHWXCR7ATDNhGe+YA==}
 
   cross-spawn@5.1.0:
     resolution: {integrity: sha512-pTgQJ5KC0d2hcY8eyL1IzlBPYjTkyH72XRZPnLyKus2mBfNjQs3klqbJU2VILqZryAZUt9JOb3h/mWMy23/f5A==}
@@ -1158,6 +1171,8 @@ snapshots:
 
   '@total-typescript/tsconfig@1.0.4': {}
 
+  '@types/confusing-browser-globals@1.0.3': {}
+
   '@types/node@12.20.55': {}
 
   '@types/semver@7.5.8': {}
@@ -1253,6 +1268,8 @@ snapshots:
   color-name@1.1.4: {}
 
   concat-map@0.0.1: {}
+
+  confusing-browser-globals@1.0.11: {}
 
   cross-spawn@5.1.0:
     dependencies:
