@@ -258,6 +258,7 @@ export default [
         {
           destructuredArrayIgnorePattern: "^_",
           ignoreRestSiblings: true,
+          // TODO: reportUsedIgnorePattern: true,
         },
       ],
       "no-use-before-define": "off",
