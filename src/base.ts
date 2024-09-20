@@ -265,7 +265,7 @@ export default [
       "prefer-numeric-literals": "off",
       "prefer-object-has-own": "off",
       "prefer-object-spread": "off",
-      "prefer-promise-reject-offs": "off",
+      "prefer-promise-reject-errors": "off",
       "prefer-regex-literals": "off",
       "prefer-rest-params": "off",
       "prefer-spread": "off",
