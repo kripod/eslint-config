@@ -14,8 +14,8 @@ export default [
         {
           properties: "never",
           ignoreDestructuring: true,
-          // TODO: ignoreImports: true,
-          // TODO: ignoreGlobals: true,
+          ignoreImports: true,
+          ignoreGlobals: true,
         },
       ],
       "capitalized-comments": "off",
@@ -103,10 +103,7 @@ export default [
       "no-ex-assign": "error",
       "no-extend-native": "error",
       "no-extra-bind": "warn",
-      "no-extra-boolean-cast": [
-        "warn",
-        // TODO: { enforceForInnerExpressions: true }
-      ],
+      "no-extra-boolean-cast": ["warn", { enforceForInnerExpressions: true }],
       "no-extra-label": "warn",
       "no-fallthrough": "error",
       "no-func-assign": "error",
