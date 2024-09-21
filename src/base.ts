@@ -112,7 +112,10 @@ export default [
         "warn",
         {
           disallowTemplateShorthand: true,
-          allow: ["!!"], // Narrows types by truthiness
+          allow: [
+            // Narrows types by truthiness
+            "!!",
+          ],
         },
       ],
       "no-implicit-globals": "error",
