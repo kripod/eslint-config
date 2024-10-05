@@ -242,18 +242,12 @@ export default [
       "no-unreachable": "error",
       "no-unreachable-loop": "error",
       "no-unsafe-finally": "error",
-      "no-unsafe-negation": [
-        "error",
-        // TODO: { enforceForOrderingRelations: true }
-      ],
+      "no-unsafe-negation": ["error", { enforceForOrderingRelations: true }],
       "no-unsafe-optional-chaining": [
         "error",
         { disallowArithmeticOperators: true },
       ],
-      "no-unused-expressions": [
-        "error",
-        // TODO: { enforceForJSX: true }
-      ],
+      "no-unused-expressions": ["error", { enforceForJSX: true }],
       "no-unused-labels": "warn",
       "no-unused-private-class-members": "warn",
       "no-unused-vars": [
