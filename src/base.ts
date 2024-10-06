@@ -2,7 +2,7 @@ import confusingBrowserGlobals from "confusing-browser-globals";
 import type { Linter } from "eslint";
 import type { ESLintRules } from "eslint/rules";
 
-export default [
+const config: Linter.Config<ESLintRules>[] = [
   {
     rules: {
       "accessor-pairs": "warn",
@@ -333,4 +333,6 @@ export default [
       yoda: "warn",
     },
   },
-] satisfies Linter.Config<ESLintRules>[];
+];
+
+export default config;

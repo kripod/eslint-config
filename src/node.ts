@@ -3,4 +3,6 @@ import type { ESLintRules } from "eslint/rules";
 
 /* TODO: Adopt rules from 'eslint-plugin-n' */
 
-export default [] satisfies Linter.Config<ESLintRules>[];
+const config: Linter.Config<ESLintRules>[] = [];
+
+export default config;
