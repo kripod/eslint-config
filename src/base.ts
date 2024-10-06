@@ -334,13 +334,9 @@ const config: TSESLint.FlatConfig.Config[] = [
       yoda: "warn",
     } satisfies Partial<ESLintRules>,
   },
+  tseslint.configs.base,
+  tseslint.configs.eslintRecommended,
   {
-    plugins: {
-      "@typescript-eslint": tseslint.plugin,
-    },
-    languageOptions: {
-      parser: tseslint.parser,
-    },
     rules: {
       "@typescript-eslint/adjacent-overload-signatures": "off",
       "@typescript-eslint/array-type": "off",
