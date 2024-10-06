@@ -1,8 +1,9 @@
+import type { TSESLint } from "@typescript-eslint/utils";
 import confusingBrowserGlobals from "confusing-browser-globals";
-import type { Linter } from "eslint";
 import type { ESLintRules } from "eslint/rules";
+import tseslint from "typescript-eslint";
 
-const config: Linter.Config<ESLintRules>[] = [
+const config: TSESLint.FlatConfig.Config[] = [
   {
     rules: {
       "accessor-pairs": "warn",
@@ -331,6 +332,14 @@ const config: Linter.Config<ESLintRules>[] = [
       "valid-typeof": ["error", { requireStringLiterals: true }],
       "vars-on-top": "error",
       yoda: "warn",
+    } satisfies Partial<ESLintRules>,
+  },
+  {
+    plugins: {
+      "@typescript-eslint": tseslint.plugin,
+    },
+    languageOptions: {
+      parser: tseslint.parser,
     },
   },
 ];

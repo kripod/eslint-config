@@ -4,7 +4,7 @@ import baseConfig from "./dist/esm/base.js";
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
-  { files: ["**/*.{js}"] }, // TODO: Add `ts`
+  { files: ["**/*.{js,jsx,ts,tsx}"] },
   {
     languageOptions: {
       globals: {
