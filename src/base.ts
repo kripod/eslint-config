@@ -111,7 +111,6 @@ export const coreRules = {
   "no-implicit-coercion": [
     "warn",
     {
-      disallowTemplateShorthand: true,
       allow: [
         // Narrows types by truthiness
         "!!",
@@ -383,20 +382,29 @@ const config: TSESLint.FlatConfig.Config[] = [
       "@typescript-eslint/consistent-type-imports": "off",
 
       "default-param-last": "off",
-      "@typescript-eslint/default-param-last": "off",
-      "dot-notation": "off",
+      "@typescript-eslint/default-param-last": coreRules["default-param-last"],
       "@typescript-eslint/explicit-function-return-type": "off",
-      "@typescript-eslint/explicit-member-accessibility": "off",
+      "@typescript-eslint/explicit-member-accessibility": [
+        "warn",
+        {
+          accessibility: "no-public",
+          overrides: {
+            parameterProperties: "explicit",
+          },
+        },
+      ],
+
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "init-declarations": "off",
-      "@typescript-eslint/init-declarations": "off",
+      "@typescript-eslint/init-declarations": coreRules["init-declarations"],
       "max-params": "off",
-      "@typescript-eslint/max-params": "off",
+      "@typescript-eslint/max-params": coreRules["max-params"],
       "@typescript-eslint/member-ordering": "off",
-      "@typescript-eslint/method-signature-style": "off",
+      "@typescript-eslint/method-signature-style": "error",
       "no-array-constructor": "off",
-      "@typescript-eslint/no-array-constructor": "off",
-      "@typescript-eslint/no-confusing-non-null-assertion": "off",
+      "@typescript-eslint/no-array-constructor":
+        coreRules["no-array-constructor"],
+      "@typescript-eslint/no-confusing-non-null-assertion": "warn",
       "no-dupe-class-members": "off",
       "@typescript-eslint/no-dupe-class-members": "off",
       "@typescript-eslint/no-duplicate-enum-values": "off",

@@ -8,7 +8,9 @@ const config: TSESLint.FlatConfig.Config[] = [
   {
     languageOptions: {
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ["*.{js,mjs,cjs}"],
+        },
       },
     },
     rules: {
@@ -19,11 +21,15 @@ const config: TSESLint.FlatConfig.Config[] = [
         "warn",
         { fixMixedExportsWithInlineTypeSpecifier: true },
       ],
-      "@typescript-eslint/dot-notation": "off",
+      "dot-notation": "off",
+      "@typescript-eslint/dot-notation": coreRules["dot-notation"],
       "@typescript-eslint/naming-convention": "off",
-      "@typescript-eslint/no-array-delete": "off",
-      "@typescript-eslint/no-base-to-string": "off",
-      "@typescript-eslint/no-confusing-void-expression": "off",
+      "@typescript-eslint/no-array-delete": "error",
+      "@typescript-eslint/no-base-to-string": "error",
+      "@typescript-eslint/no-confusing-void-expression": [
+        "warn",
+        { ignoreArrowShorthand: true },
+      ],
       "@typescript-eslint/no-deprecated": "off",
       "@typescript-eslint/no-duplicate-type-constituents": "off",
       "@typescript-eslint/no-floating-promises": "off",
