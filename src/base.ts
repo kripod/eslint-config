@@ -255,7 +255,7 @@ const coreRules = {
     {
       destructuredArrayIgnorePattern: "^_",
       ignoreRestSiblings: true,
-      // TODO: reportUsedIgnorePattern: true,
+      reportUsedIgnorePattern: true,
     },
   ],
   "no-use-before-define": ["error", { functions: false }],
