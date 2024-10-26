@@ -4,7 +4,7 @@ import type { Linter } from "eslint";
 import type { ESLintRules } from "eslint/rules";
 import tseslint from "typescript-eslint";
 
-const coreRules = {
+export const coreRules = {
   "accessor-pairs": "warn",
   "array-callback-return": "error",
   "arrow-body-style": "warn",
@@ -185,7 +185,6 @@ const coreRules = {
       restrictDefaultExports: {
         // Prefer `export default` expressions
         named: true,
-
         // Avoid re-exporting entire modules as is
         namespaceFrom: true,
       },
@@ -357,19 +356,32 @@ const config: TSESLint.FlatConfig.Config[] = [
   },
   {
     rules: {
-      "@typescript-eslint/adjacent-overload-signatures": "off",
-      "@typescript-eslint/array-type": "off",
-      "@typescript-eslint/ban-ts-comment": "off",
-      "@typescript-eslint/ban-tslint-comment": "off",
-      "@typescript-eslint/class-literal-property-style": "off",
+      "@typescript-eslint/adjacent-overload-signatures": "warn",
+      "@typescript-eslint/array-type": ["warn", { default: "array-simple" }],
+      "@typescript-eslint/ban-ts-comment": "warn",
+      "@typescript-eslint/ban-tslint-comment": "warn",
+      "@typescript-eslint/class-literal-property-style": [
+        "warn",
+        // Enforcement at runtime
+        "getters",
+      ],
       "class-methods-use-this": "off",
-      "@typescript-eslint/class-methods-use-this": "off",
-      "@typescript-eslint/consistent-generic-constructors": "off",
+      "@typescript-eslint/class-methods-use-this":
+        coreRules["class-methods-use-this"],
+      "@typescript-eslint/consistent-generic-constructors": "warn",
       "@typescript-eslint/consistent-indexed-object-style": "off",
-      "consistent-return": "off",
-      "@typescript-eslint/consistent-type-assertions": "off",
-      "@typescript-eslint/consistent-type-definitions": "off",
+      "@typescript-eslint/consistent-type-assertions": [
+        "error",
+        {
+          assertionStyle: "as",
+          objectLiteralTypeAssertions: "allow-as-parameter",
+        },
+      ],
+      "@typescript-eslint/consistent-type-definitions": "warn",
+
+      // Covered by `verbatimModuleSyntax` of TypeScript
       "@typescript-eslint/consistent-type-imports": "off",
+
       "default-param-last": "off",
       "@typescript-eslint/default-param-last": "off",
       "dot-notation": "off",

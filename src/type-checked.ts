@@ -1,6 +1,8 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import tseslint from "typescript-eslint";
 
+import { coreRules } from "./base.js";
+
 const config: TSESLint.FlatConfig.Config[] = [
   tseslint.configs.base,
   {
@@ -10,9 +12,13 @@ const config: TSESLint.FlatConfig.Config[] = [
       },
     },
     rules: {
-      "@typescript-eslint/await-thenable": "off",
-      "@typescript-eslint/consistent-return": "off",
-      "@typescript-eslint/consistent-type-exports": "off",
+      "@typescript-eslint/await-thenable": "error",
+      "consistent-return": "off",
+      "@typescript-eslint/consistent-return": coreRules["consistent-return"],
+      "@typescript-eslint/consistent-type-exports": [
+        "warn",
+        { fixMixedExportsWithInlineTypeSpecifier: true },
+      ],
       "@typescript-eslint/dot-notation": "off",
       "@typescript-eslint/naming-convention": "off",
       "@typescript-eslint/no-array-delete": "off",
