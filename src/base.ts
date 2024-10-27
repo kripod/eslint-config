@@ -4,6 +4,11 @@ import type { Linter } from "eslint";
 import type { ESLintRules } from "eslint/rules";
 import tseslint from "typescript-eslint";
 
+function ruleDisabled(entry: Linter.RuleEntry) {
+  const severity = Array.isArray(entry) ? entry[0] : entry;
+  return severity === "off" || severity === 0;
+}
+
 export const coreRules = {
   "accessor-pairs": "warn",
   "array-callback-return": "error",
@@ -337,23 +342,6 @@ const config: TSESLint.FlatConfig.Config[] = [
   },
   tseslint.configs.base,
   {
-    ...tseslint.configs.eslintRecommended,
-    rules: {
-      ...tseslint.configs.eslintRecommended.rules,
-      ...Object.fromEntries(
-        Object.entries(tseslint.configs.eslintRecommended.rules ?? {})
-          .filter(([, entry]) => {
-            const severity = Array.isArray(entry) ? entry[0] : entry;
-            return severity !== "off" && severity !== 0;
-          })
-          .map(([rule, entry]) => [
-            rule,
-            (coreRules as Linter.RulesRecord)[rule] ?? entry,
-          ]),
-      ),
-    },
-  },
-  {
     rules: {
       "@typescript-eslint/adjacent-overload-signatures": "warn",
       "@typescript-eslint/array-type": ["warn", { default: "array-simple" }],
@@ -393,7 +381,6 @@ const config: TSESLint.FlatConfig.Config[] = [
           },
         },
       ],
-
       "@typescript-eslint/explicit-module-boundary-types": "off",
       "init-declarations": "off",
       "@typescript-eslint/init-declarations": coreRules["init-declarations"],
@@ -474,10 +461,17 @@ const config: TSESLint.FlatConfig.Config[] = [
     },
   },
   {
-    files: ["**/*.ts", "**/*.mts", "**/*.cts", "**/*.tsx"],
+    ...tseslint.configs.eslintRecommended,
     rules: {
-      "@typescript-eslint/no-dupe-class-members": "off",
-      "@typescript-eslint/no-redeclare": "off",
+      ...tseslint.configs.eslintRecommended.rules,
+      ...Object.fromEntries(
+        Object.entries(tseslint.configs.eslintRecommended.rules ?? {}).map(
+          ([rule, entry]): [string, typeof entry] =>
+            entry == null || !ruleDisabled(entry)
+              ? [rule, (coreRules as Linter.RulesRecord)[rule] ?? entry]
+              : [`@typescript-eslint/${rule}`, "off"],
+        ),
+      ),
     },
   },
 ];
