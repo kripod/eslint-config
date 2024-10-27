@@ -406,7 +406,8 @@ const config: TSESLint.FlatConfig.Config[] = [
         coreRules["no-array-constructor"],
       "@typescript-eslint/no-confusing-non-null-assertion": "warn",
       "no-dupe-class-members": "off",
-      "@typescript-eslint/no-dupe-class-members": "off",
+      "@typescript-eslint/no-dupe-class-members":
+        coreRules["no-dupe-class-members"],
       "@typescript-eslint/no-duplicate-enum-values": "off",
       "@typescript-eslint/no-dynamic-delete": "off",
       "no-empty-function": "off",
@@ -470,6 +471,13 @@ const config: TSESLint.FlatConfig.Config[] = [
       "@typescript-eslint/triple-slash-reference": "off",
       "@typescript-eslint/typedef": "off",
       "@typescript-eslint/unified-signatures": "off",
+    },
+  },
+  {
+    files: ["**/*.ts", "**/*.mts", "**/*.cts", "**/*.tsx"],
+    rules: {
+      "@typescript-eslint/no-dupe-class-members": "off",
+      "@typescript-eslint/no-redeclare": "off",
     },
   },
 ];

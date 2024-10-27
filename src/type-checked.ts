@@ -9,7 +9,7 @@ const config: TSESLint.FlatConfig.Config[] = [
     languageOptions: {
       parserOptions: {
         projectService: {
-          allowDefaultProject: ["*.{js,mjs,cjs}"],
+          allowDefaultProject: ["*.js", "*.mjs", "*.cjs"],
         },
       },
     },
@@ -30,7 +30,7 @@ const config: TSESLint.FlatConfig.Config[] = [
         "warn",
         { ignoreArrowShorthand: true },
       ],
-      "@typescript-eslint/no-deprecated": "off",
+      "@typescript-eslint/no-deprecated": "warn",
       "@typescript-eslint/no-duplicate-type-constituents": "off",
       "@typescript-eslint/no-floating-promises": "off",
       "@typescript-eslint/no-for-in-array": "off",

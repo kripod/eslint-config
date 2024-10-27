@@ -5,7 +5,7 @@ import typeCheckedConfig from "./dist/esm/type-checked.js";
 
 /** @type {import("eslint").Linter.Config[]} */
 export default [
-  { files: ["**/*.{js,jsx,ts,tsx}"] },
+  { files: ["**/*.jsx", "**/*.ts", "**/*.mts", "**/*.cts", "**/*.tsx"] },
   {
     languageOptions: {
       globals: {
