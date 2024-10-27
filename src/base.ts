@@ -395,25 +395,32 @@ const config: TSESLint.FlatConfig.Config[] = [
       "no-dupe-class-members": "off",
       "@typescript-eslint/no-dupe-class-members":
         coreRules["no-dupe-class-members"],
-      "@typescript-eslint/no-duplicate-enum-values": "off",
-      "@typescript-eslint/no-dynamic-delete": "off",
+      "@typescript-eslint/no-duplicate-enum-values": "warn",
+      "@typescript-eslint/no-dynamic-delete": "error",
       "no-empty-function": "off",
-      "@typescript-eslint/no-empty-function": "off",
-      "@typescript-eslint/no-empty-object-type": "off",
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-extra-non-null-assertion": "off",
-      "@typescript-eslint/no-extraneous-class": "off",
-      "no-implied-eval": "off",
-      "@typescript-eslint/no-import-type-side-effects": "off",
-      "@typescript-eslint/no-inferrable-types": "off",
+      "@typescript-eslint/no-empty-function": coreRules["no-empty-function"],
+      "@typescript-eslint/no-empty-object-type": "warn",
+      "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/no-extra-non-null-assertion": "warn",
+      "@typescript-eslint/no-extraneous-class": "warn",
+
+      // TODO: Verify functionality
+      "@typescript-eslint/no-import-type-side-effects": "error",
+
+      // TODO: Interop with `verbatimModuleSyntax` of TypeScript
+      "@typescript-eslint/no-inferrable-types": "warn",
+
       "no-invalid-this": "off",
-      "@typescript-eslint/no-invalid-this": "off",
-      "@typescript-eslint/no-invalid-void-type": "off",
+      "@typescript-eslint/no-invalid-this": coreRules["no-invalid-this"],
+      "@typescript-eslint/no-invalid-void-type": [
+        "error",
+        { allowAsThisParameter: true },
+      ],
       "no-loop-func": "off",
-      "@typescript-eslint/no-loop-func": "off",
+      "@typescript-eslint/no-loop-func": coreRules["no-loop-func"],
       "no-magic-numbers": "off",
-      "@typescript-eslint/no-magic-numbers": "off",
-      "@typescript-eslint/no-misused-new": "off",
+      "@typescript-eslint/no-magic-numbers": coreRules["no-magic-numbers"],
+      "@typescript-eslint/no-misused-new": "error",
       "@typescript-eslint/no-namespace": "off",
       "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "off",
       "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
@@ -462,6 +469,7 @@ const config: TSESLint.FlatConfig.Config[] = [
   },
   {
     ...tseslint.configs.eslintRecommended,
+    files: ["**/*.ts", "**/*.mts", "**/*.cts", "**/*.tsx"],
     rules: {
       ...tseslint.configs.eslintRecommended.rules,
       ...Object.fromEntries(
@@ -474,6 +482,7 @@ const config: TSESLint.FlatConfig.Config[] = [
                 [`@typescript-eslint/${rule}`, "off"],
         ),
       ),
+      "@typescript-eslint/no-invalid-this": "off",
     },
   },
 ];
