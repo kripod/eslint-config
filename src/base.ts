@@ -275,7 +275,11 @@ export const coreRules = {
   "no-useless-escape": "warn",
   "no-useless-rename": "warn",
   "no-useless-return": "warn",
+
+  // TODO: Support declaring global variables
+  // https://github.com/typescript-eslint/typescript-eslint/issues/7941
   "no-var": "error",
+
   "no-void": [
     "error",
     {
@@ -421,10 +425,10 @@ const config: TSESLint.FlatConfig.Config[] = [
       "no-magic-numbers": "off",
       "@typescript-eslint/no-magic-numbers": coreRules["no-magic-numbers"],
       "@typescript-eslint/no-misused-new": "error",
-      "@typescript-eslint/no-namespace": "off",
-      "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "off",
-      "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
-      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-namespace": "error",
+      "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
+      "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
+      "@typescript-eslint/no-non-null-assertion": "warn",
       "no-redeclare": "off",
       "@typescript-eslint/no-redeclare": "off",
       "@typescript-eslint/no-require-imports": "off",
