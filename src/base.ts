@@ -468,8 +468,10 @@ const config: TSESLint.FlatConfig.Config[] = [
         Object.entries(tseslint.configs.eslintRecommended.rules ?? {}).map(
           ([rule, entry]): [string, typeof entry] =>
             entry == null || !ruleDisabled(entry)
-              ? [rule, (coreRules as Linter.RulesRecord)[rule] ?? entry]
-              : [`@typescript-eslint/${rule}`, "off"],
+              ? // Retain severity of core rule
+                [rule, (coreRules as Linter.RulesRecord)[rule] ?? entry]
+              : // Disable corresponding extension rule if one exists
+                [`@typescript-eslint/${rule}`, "off"],
         ),
       ),
     },
