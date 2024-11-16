@@ -116,6 +116,7 @@ export const coreRules = {
   "no-implicit-coercion": [
     "warn",
     {
+      disallowTemplateShorthand: true,
       allow: [
         // Narrows types by truthiness
         "!!",
