@@ -221,9 +221,6 @@ export const coreRules = {
   ],
   "no-restricted-syntax": "off",
   "no-return-assign": ["error", "always"],
-
-  // TODO: Enforce opposite of 'no-return-await' for debugging enhancement
-
   "no-script-url": "error",
   "no-self-assign": "warn",
   "no-self-compare": "warn",
@@ -467,11 +464,15 @@ const config: TSESLint.FlatConfig.Config[] = [
         { allowBitwiseExpressions: true },
       ],
       "@typescript-eslint/prefer-namespace-keyword": "warn",
-      "require-await": "off",
-      "no-return-await": "off",
-      "@typescript-eslint/triple-slash-reference": "off",
+      "@typescript-eslint/triple-slash-reference": "error",
       "@typescript-eslint/typedef": "off",
-      "@typescript-eslint/unified-signatures": "off",
+      "@typescript-eslint/unified-signatures": [
+        "warn",
+        {
+          // For docs generation
+          ignoreDifferentlyNamedParameters: true,
+        },
+      ],
     },
   },
   {
