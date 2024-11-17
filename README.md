@@ -2,6 +2,9 @@
 
 Pragmatic ESLint config for robust collaboration
 
+[![npm version](https://img.shields.io/npm/v/@kripod/eslint-config)](https://www.npmjs.com/package/@kripod/eslint-config)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/kripod)](https://github.com/sponsors/kripod)
+
 ## Principles
 
 - Exhaustive [flat configs](https://eslint.org/docs/latest/use/configure/configuration-files) for ESLint v9+
