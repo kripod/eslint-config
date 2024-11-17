@@ -4,7 +4,7 @@ Pragmatic ESLint config for robust collaboration
 
 ## Principles
 
-- Exhaustive rulesets for ESLint v9+
+- Exhaustive [flat configs](https://eslint.org/docs/latest/use/configure/configuration-files) for ESLint v9+
 - Distinct severities
   - Error on potential bugs, ambiguities and unsafe/legacy constructs
   - Warn about incompletions and unification opportunities
