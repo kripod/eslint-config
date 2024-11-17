@@ -4,8 +4,9 @@ import tseslint from "typescript-eslint";
 import { coreRules } from "./base.js";
 
 const config: TSESLint.FlatConfig.Config[] = [
-  tseslint.configs.base,
   {
+    ...tseslint.configs.base,
+    name: "kripod/type-checked/setup",
     languageOptions: {
       parserOptions: {
         projectService: {
@@ -13,6 +14,9 @@ const config: TSESLint.FlatConfig.Config[] = [
         },
       },
     },
+  },
+  {
+    name: "kripod/type-checked/rules",
     rules: {
       "@typescript-eslint/await-thenable": "error",
       "consistent-return": "off",
