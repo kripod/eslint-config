@@ -1,14 +1,14 @@
 {
-  "name": "eslint-config-lean",
+  "name": "@kripod/eslint-config",
   "version": "0.0.0",
   "description": "TODO",
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
-  "homepage": "https://github.com/kripod/eslint-config-lean#readme",
-  "bugs": "https://github.com/kripod/eslint-config-lean/issues",
-  "repository": "kripod/eslint-config-lean",
+  "homepage": "https://github.com/kripod/eslint-config#readme",
+  "bugs": "https://github.com/kripod/eslint-config/issues",
+  "repository": "kripod/eslint-config",
   "license": "MIT",
   "author": "Kristóf Poduszló (https://www.kripod.dev/)",
   "type": "module",

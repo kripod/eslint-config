@@ -1,4 +1,4 @@
-# Contributing to eslint-config-lean
+# Contributing to @kripod/eslint-config
 
 Thank you for taking the time to contribute! Guidelines below are meant to help you along the way. All contributions are welcome, including ideas, tweaks and more.
 
@@ -29,4 +29,4 @@ Keep the scope of each pull request to **one** specific feature or fix.
 
 As a collaborator, you agree to license your contributions under the project's [MIT license](./LICENSE).
 
-[issues]: https://github.com/kripod/eslint-config-lean/issues
+[issues]: https://github.com/kripod/eslint-config/issues
