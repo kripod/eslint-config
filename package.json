@@ -1,7 +1,7 @@
 {
   "name": "@kripod/eslint-config",
   "version": "0.0.0",
-  "description": "TODO",
+  "description": "Pragmatic ESLint config for robust collaboration",
   "keywords": [
     "eslint",
     "eslintconfig"

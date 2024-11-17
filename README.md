@@ -1,6 +1,6 @@
 # @kripod/eslint-config
 
-Pragmatic ESLint config for robust collaboration.
+Pragmatic ESLint config for robust collaboration
 
 ## Principles
 

@@ -405,13 +405,8 @@ const config: TSESLint.FlatConfig.Config[] = [
       "@typescript-eslint/no-explicit-any": "warn",
       "@typescript-eslint/no-extra-non-null-assertion": "warn",
       "@typescript-eslint/no-extraneous-class": "warn",
-
-      // TODO: Verify functionality
       "@typescript-eslint/no-import-type-side-effects": "error",
-
-      // TODO: Interop with `verbatimModuleSyntax` of TypeScript
       "@typescript-eslint/no-inferrable-types": "warn",
-
       "no-invalid-this": "off",
       "@typescript-eslint/no-invalid-this": coreRules["no-invalid-this"],
       "@typescript-eslint/no-invalid-void-type": [
