@@ -23,14 +23,14 @@
         "default": "./dist/commonjs/base.js"
       }
     },
-    "./node": {
+    "./type-checked": {
       "import": {
-        "types": "./dist/esm/node.d.ts",
-        "default": "./dist/esm/node.js"
+        "types": "./dist/esm/type-checked.d.ts",
+        "default": "./dist/esm/type-checked.js"
       },
       "require": {
-        "types": "./dist/commonjs/node.d.ts",
-        "default": "./dist/commonjs/node.js"
+        "types": "./dist/commonjs/type-checked.d.ts",
+        "default": "./dist/commonjs/type-checked.js"
       }
     }
   },
@@ -71,7 +71,7 @@
   "tshy": {
     "exports": {
       "./base": "./src/base.ts",
-      "./node": "./src/node.ts"
+      "./type-checked": "./src/type-checked.ts"
     }
   }
 }
