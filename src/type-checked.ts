@@ -1,7 +1,7 @@
 import type { TSESLint } from "@typescript-eslint/utils";
 import tseslint from "typescript-eslint";
 
-import { coreRules } from "./base.js";
+import { coreRules } from "./common.js";
 
 const config: TSESLint.FlatConfig.Config[] = [
   {
