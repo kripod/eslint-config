@@ -468,12 +468,11 @@ const config: TSESLint.FlatConfig.Config[] = [
     name: "kripod/base/setup",
   },
   {
-    name: "kripod/base/rules/core",
-    rules: coreRules,
-  },
-  {
-    name: "kripod/base/rules/typescript-eslint",
-    rules: tseslintRules,
+    name: "kripod/base/rules",
+    rules: {
+      ...coreRules,
+      ...tseslintRules,
+    },
   },
   {
     ...tseslint.configs.eslintRecommended,
