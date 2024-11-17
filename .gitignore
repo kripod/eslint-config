@@ -1,5 +1,6 @@
 node_modules/
 dist/
 .tshy-build/
+.eslint-config-inspector/
 *.log*
 .DS_Store

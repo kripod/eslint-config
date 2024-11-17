@@ -40,6 +40,7 @@
   "scripts": {
     "prepare": "tshy",
     "clean": "git clean --interactive -dx --exclude node_modules/",
+    "build:inspector": "eslint-config-inspector build",
     "lint": "pnpm run \"/^lint:(?!fix)/\"",
     "lint:format": "prettier --check .",
     "lint:types": "tsc --noEmit",
@@ -54,6 +55,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "0.5.0",
     "@changesets/cli": "2.27.9",
+    "@eslint/config-inspector": "0.5.6",
     "@total-typescript/tsconfig": "1.0.4",
     "@types/confusing-browser-globals": "1.0.3",
     "eslint": "9.14.0",
