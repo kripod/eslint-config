@@ -1,5 +1,15 @@
 # @kripod/eslint-config
 
+## 0.2.0
+
+### Minor Changes
+
+- [`873a1c6`](https://github.com/kripod/eslint-config/commit/873a1c6ed91ed1372f4b310b4ebb3195089a3764) Thanks [@kripod](https://github.com/kripod)! - refactor(base): disable 'prefer-named-capture-group'
+
+### Patch Changes
+
+- [`be72f03`](https://github.com/kripod/eslint-config/commit/be72f03549e7727a40d48044d165a919d7757cfc) Thanks [@kripod](https://github.com/kripod)! - revert(type-checked): options of '@typescript-eslint/restrict-plus-operands'
+
 ## 0.1.4
 
 ### Patch Changes
