@@ -1,5 +1,13 @@
 # @kripod/eslint-config
 
+## 0.1.4
+
+### Patch Changes
+
+- [`61e7d2b`](https://github.com/kripod/eslint-config/commit/61e7d2bec273624c9a90e0e9b73e32a641da1ea2) Thanks [@kripod](https://github.com/kripod)! - refactor(type-checked): allow `any` in '@typescript-eslint/strict-boolean-expressions'
+
+- [`381724d`](https://github.com/kripod/eslint-config/commit/381724d2a34bde55f1f2c28c7891a4206bcf7bad) Thanks [@kripod](https://github.com/kripod)! - refactor(type-checked): relax coercions to string
+
 ## 0.1.3
 
 ### Patch Changes
