@@ -144,7 +144,10 @@ const config: TSESLint.FlatConfig.Config[] = [
         "error",
         { considerDefaultExhaustiveForUnions: true },
       ],
-      "@typescript-eslint/unbound-method": "error",
+
+      // Produces false positives
+      "@typescript-eslint/unbound-method": "off",
+
       "@typescript-eslint/use-unknown-in-catch-callback-variable": "warn",
     },
   },
