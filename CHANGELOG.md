@@ -1,5 +1,13 @@
 # @kripod/eslint-config
 
+## 0.1.3
+
+### Patch Changes
+
+- [`c1b03c2`](https://github.com/kripod/eslint-config/commit/c1b03c2165a6c7fc7ceb463ccbc8da740320b52b) Thanks [@kripod](https://github.com/kripod)! - fix(type-checked): remove 'projectService.allowDefaultProject'
+
+- [`00ded14`](https://github.com/kripod/eslint-config/commit/00ded14d8d671ac950911994a04b4b2c0829e225) Thanks [@kripod](https://github.com/kripod)! - fix(base): disable 'no-useless-assignment' due to JSX false positives
+
 ## 0.1.2
 
 ### Patch Changes
