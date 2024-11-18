@@ -10,9 +10,7 @@ const config: TSESLint.FlatConfig.Config[] = [
     name: "kripod/type-checked/setup",
     languageOptions: {
       parserOptions: {
-        projectService: {
-          allowDefaultProject: ["*.js", "*.mjs", "*.cjs"],
-        },
+        projectService: true,
       },
     },
   },
