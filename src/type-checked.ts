@@ -1,4 +1,5 @@
 import type { TSESLint } from "@typescript-eslint/utils";
+import type { Linter } from "eslint";
 import tseslint from "typescript-eslint";
 
 import { coreRules } from "./common.js";
@@ -149,4 +150,4 @@ const config: TSESLint.FlatConfig.Config[] = [
   },
 ];
 
-export default config;
+export default config as Linter.Config[];

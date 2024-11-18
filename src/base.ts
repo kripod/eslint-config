@@ -171,4 +171,4 @@ const config: TSESLint.FlatConfig.Config[] = [
   },
 ];
 
-export default config;
+export default config as Linter.Config[];
