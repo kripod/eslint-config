@@ -114,7 +114,7 @@ const config: TSESLint.FlatConfig.Config[] = [
       "@typescript-eslint/strict-boolean-expressions": [
         "error",
         {
-          allowAny: false,
+          allowAny: true,
           allowNullableBoolean: true,
           // TODO: Consider `false` without autofix
           allowNullableEnum: true,
