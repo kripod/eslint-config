@@ -104,7 +104,13 @@ const config: TSESLint.FlatConfig.Config[] = [
       "@typescript-eslint/require-await": coreRules["require-await"],
       "@typescript-eslint/restrict-plus-operands": [
         "error",
-        { allowNullish: false },
+        {
+          allowAny: false,
+          allowBoolean: false,
+          allowNullish: false,
+          allowNumberAndString: false,
+          allowRegExp: false,
+        },
       ],
       "@typescript-eslint/restrict-template-expressions": [
         "error",
