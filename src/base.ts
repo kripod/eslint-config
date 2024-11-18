@@ -65,7 +65,10 @@ const tseslintRules = {
   "@typescript-eslint/no-dynamic-delete": "error",
   "no-empty-function": "off",
   "@typescript-eslint/no-empty-function": coreRules["no-empty-function"],
-  "@typescript-eslint/no-empty-object-type": "warn",
+  "@typescript-eslint/no-empty-object-type": [
+    "warn",
+    { allowInterfaces: "with-single-extends" },
+  ],
   "@typescript-eslint/no-explicit-any": "warn",
   "@typescript-eslint/no-extra-non-null-assertion": "warn",
   "@typescript-eslint/no-extraneous-class": "warn",
