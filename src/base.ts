@@ -149,29 +149,25 @@ const config: TSESLint.FlatConfig.Config[] = [
     ...tseslint.configs.eslintRecommended,
     name: "kripod/base/disables",
     files: ["**/*.ts", "**/*.mts", "**/*.cts", "**/*.tsx"],
-    rules: {
-      ...tseslint.configs.eslintRecommended.rules,
-      ...Object.fromEntries(
-        Object.entries(tseslint.configs.eslintRecommended.rules ?? {}).map(
-          ([rule, entry]): [string, typeof entry] => {
-            if (entry == null || !ruleDisabled(entry)) {
-              // Retain severity of core rule
-              return [rule, undefined];
-            }
-            // Disable corresponding extension rule if one exists
-            const tseslintRule = `@typescript-eslint/${rule}`;
-            return [
-              tseslintRule,
-              (tseslintRules as Linter.RulesRecord)[tseslintRule] != null
-                ? "off"
-                : undefined,
-            ];
-          },
-        ),
-      ),
-      "no-invalid-this": "off",
-      "@typescript-eslint/no-invalid-this": "off",
-    },
+    rules: Object.fromEntries(
+      Object.entries<TSESLint.FlatConfig.RuleEntry | undefined>({
+        ...tseslint.configs.eslintRecommended.rules,
+        "no-invalid-this": "off",
+      }).flatMap(([rule, entry]) => {
+        if (entry == null || !ruleDisabled(entry)) {
+          // Retain severity of core rule
+          return [];
+        }
+        // Disable corresponding extension rule if one exists
+        const tseslintRule = `@typescript-eslint/${rule}`;
+        return [
+          [rule, entry],
+          ...((tseslintRules as Linter.RulesRecord)[tseslintRule] != null
+            ? [[tseslintRule, entry] as const]
+            : []),
+        ];
+      }),
+    ),
   },
 ];
 
