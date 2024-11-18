@@ -300,7 +300,7 @@ export const coreRules = {
     },
   ],
   "prefer-exponentiation-operator": "warn",
-  "prefer-named-capture-group": "warn",
+  "prefer-named-capture-group": "off",
   "prefer-numeric-literals": "warn",
   "prefer-object-has-own": "warn",
   "prefer-object-spread": "warn",
