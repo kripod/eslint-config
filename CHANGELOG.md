@@ -1,5 +1,13 @@
 # @kripod/eslint-config
 
+## 0.1.2
+
+### Patch Changes
+
+- [`a992d28`](https://github.com/kripod/eslint-config/commit/a992d28149540d78a90008c86cec819594e0a6e8) Thanks [@kripod](https://github.com/kripod)! - refactor(type-checked): disable '@typescript-eslint/unbound-method'
+
+- [`d533490`](https://github.com/kripod/eslint-config/commit/d533490f1412b8f71002562dc9073ebd3decace4) Thanks [@kripod](https://github.com/kripod)! - refactor(base): relax '@typescript-eslint/no-empty-object-type' options
+
 ## 0.1.1
 
 ### Patch Changes
