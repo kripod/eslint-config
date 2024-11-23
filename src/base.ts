@@ -136,9 +136,9 @@ const tseslintRules = {
   ],
 } satisfies TSESLint.FlatConfig.Rules;
 
-const config: TSESLint.FlatConfig.Config[] = [
+const config: Linter.Config[] = [
   {
-    ...tseslint.configs.base,
+    ...(tseslint.configs.base as Linter.Config),
     name: "kripod/base/setup",
   },
   {
@@ -149,7 +149,7 @@ const config: TSESLint.FlatConfig.Config[] = [
     },
   },
   {
-    ...tseslint.configs.eslintRecommended,
+    ...(tseslint.configs.eslintRecommended as Linter.Config),
     name: "kripod/base/disables",
     files: ["**/*.ts", "**/*.mts", "**/*.cts", "**/*.tsx"],
     rules: Object.fromEntries(
@@ -174,4 +174,4 @@ const config: TSESLint.FlatConfig.Config[] = [
   },
 ];
 
-export default config as Linter.Config[];
+export default config;

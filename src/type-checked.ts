@@ -1,12 +1,11 @@
-import type { TSESLint } from "@typescript-eslint/utils";
 import type { Linter } from "eslint";
 import tseslint from "typescript-eslint";
 
 import { coreRules } from "./common.js";
 
-const config: TSESLint.FlatConfig.Config[] = [
+const config: Linter.Config[] = [
   {
-    ...tseslint.configs.base,
+    ...(tseslint.configs.base as Linter.Config),
     name: "kripod/type-checked/setup",
     languageOptions: {
       parserOptions: {
@@ -144,4 +143,4 @@ const config: TSESLint.FlatConfig.Config[] = [
   },
 ];
 
-export default config as Linter.Config[];
+export default config;
