@@ -32,6 +32,8 @@ import globals from "globals";
 /** @type {import("eslint").Linter.Config[]} */
 export default [
   { files: ["**/*.jsx", "**/*.ts", "**/*.mts", "**/*.cts", "**/*.tsx"] },
+  ...baseConfig,
+  ...typeCheckedConfig,
   {
     languageOptions: {
       globals: {
@@ -39,8 +41,6 @@ export default [
       },
     },
   },
-  ...baseConfig,
-  ...typeCheckedConfig,
 ];
 ```
 
