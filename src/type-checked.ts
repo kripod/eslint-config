@@ -25,7 +25,10 @@ const config: Linter.Config[] = [
       ],
       "dot-notation": "off",
       "@typescript-eslint/dot-notation": coreRules["dot-notation"],
+
+      // TODO: Enable as a replacement for 'camelcase'
       "@typescript-eslint/naming-convention": "off",
+
       "@typescript-eslint/no-array-delete": "error",
       "@typescript-eslint/no-base-to-string": "error",
       "@typescript-eslint/no-confusing-void-expression": [
@@ -88,9 +91,13 @@ const config: Linter.Config[] = [
         "warn",
         { requireNullish: true },
       ],
+
       "prefer-promise-reject-errors": "off",
+      // TODO: Allow `any` and `unknown`
+      // https://github.com/typescript-eslint/typescript-eslint/issues/10375
       "@typescript-eslint/prefer-promise-reject-errors":
         coreRules["prefer-promise-reject-errors"],
+
       "@typescript-eslint/prefer-readonly": "warn",
       "@typescript-eslint/prefer-readonly-parameter-types": "off",
       "@typescript-eslint/prefer-reduce-type-parameter": "warn",
