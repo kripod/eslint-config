@@ -1,5 +1,11 @@
 # @kripod/eslint-config
 
+## 0.2.1
+
+### Patch Changes
+
+- [`a30064d`](https://github.com/kripod/eslint-config/commit/a30064db544853dc537924c89f74738da99c4608) Thanks [@kripod](https://github.com/kripod)! - docs: reorder config options
+
 ## 0.2.0
 
 ### Minor Changes
