@@ -165,7 +165,7 @@ const config: TSESLint.FlatConfig.Config[] = [
         const tseslintRule = `@typescript-eslint/${rule}`;
         return [
           [rule, entry],
-          ...((tseslintRules as Linter.RulesRecord)[tseslintRule] != null
+          ...(tseslintRule in tseslintRules
             ? [[tseslintRule, entry] as const]
             : []),
         ];
