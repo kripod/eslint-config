@@ -1,5 +1,15 @@
 # @kripod/eslint-config
 
+## 0.2.2
+
+### Patch Changes
+
+- [`b3852cf`](https://github.com/kripod/eslint-config/commit/b3852cf07e7200b4a0b5a48a814c32f5ff05a271) Thanks [@kripod](https://github.com/kripod)! - refactor(base): reduce severity of 'no-continue' to 'warn'
+
+- [`d7aef6a`](https://github.com/kripod/eslint-config/commit/d7aef6a04563593680f44170f02a0e89b76e59c1) Thanks [@kripod](https://github.com/kripod)! - refactor(base): disable 'no-underscore-dangle'
+
+- [`cbc49f9`](https://github.com/kripod/eslint-config/commit/cbc49f9a017eed2d319e8dfe114478bc5baed700) Thanks [@kripod](https://github.com/kripod)! - fix(type-checked): disable '@typescript-eslint/prefer-readonly' for JS compat
+
 ## 0.2.1
 
 ### Patch Changes
