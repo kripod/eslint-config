@@ -106,7 +106,7 @@ const config: Linter.Config[] = [
       "@typescript-eslint/prefer-return-this-type": "warn",
       "@typescript-eslint/prefer-string-starts-ends-with": "warn",
       "@typescript-eslint/promise-function-async": "warn",
-      "@typescript-eslint/related-getter-setter-pairs": "off",
+      "@typescript-eslint/related-getter-setter-pairs": "error",
       "@typescript-eslint/require-array-sort-compare": "error",
       "require-await": "off",
       "@typescript-eslint/require-await": coreRules["require-await"],
