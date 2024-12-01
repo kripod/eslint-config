@@ -48,26 +48,26 @@
     "lint:fix:format": "prettier --write ."
   },
   "dependencies": {
-    "@typescript-eslint/utils": "^8.14.0",
+    "@typescript-eslint/utils": "^8.16.0",
     "confusing-browser-globals": "^1.0.11",
-    "typescript-eslint": "^8.14.0"
+    "typescript-eslint": "^8.16.0"
   },
   "devDependencies": {
     "@changesets/changelog-github": "0.5.0",
-    "@changesets/cli": "2.27.9",
+    "@changesets/cli": "2.27.10",
     "@eslint/config-inspector": "0.5.6",
     "@total-typescript/tsconfig": "1.0.4",
     "@types/confusing-browser-globals": "1.0.3",
-    "eslint": "9.14.0",
+    "eslint": "9.16.0",
     "globals": "15.12.0",
-    "prettier": "3.3.3",
+    "prettier": "3.4.1",
     "tshy": "3.0.2",
-    "typescript": "5.6.3"
+    "typescript": "5.7.2"
   },
   "peerDependencies": {
     "eslint": ">=9.13"
   },
-  "packageManager": "pnpm@9.13.2",
+  "packageManager": "pnpm@9.14.4",
   "tshy": {
     "exports": {
       "./base": "./src/base.ts",
