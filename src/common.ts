@@ -228,7 +228,10 @@ export const coreRules = {
   "no-undef": "error",
   "no-undef-init": "warn",
   "no-undefined": "off",
-  "no-underscore-dangle": ["error", { allowAfterThis: true }],
+
+  // Prisma uses '_' prefix for aggregations
+  "no-underscore-dangle": "off",
+
   "no-unexpected-multiline": "error",
   "no-unmodified-loop-condition": "error",
   "no-unneeded-ternary": ["warn", { defaultAssignment: false }],
