@@ -98,7 +98,7 @@ const config: Linter.Config[] = [
       "@typescript-eslint/prefer-promise-reject-errors":
         coreRules["prefer-promise-reject-errors"],
 
-      "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/prefer-readonly": "off",
       "@typescript-eslint/prefer-readonly-parameter-types": "off",
       "@typescript-eslint/prefer-reduce-type-parameter": "warn",
       "@typescript-eslint/prefer-regexp-exec": "warn",
