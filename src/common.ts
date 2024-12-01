@@ -69,7 +69,7 @@ export const coreRules = {
   "no-constant-binary-expression": "error",
   "no-constant-condition": "error",
   "no-constructor-return": "error",
-  "no-continue": "error",
+  "no-continue": "warn",
 
   // TODO: Replace with 'regexp/no-control-character'
   "no-control-regex": "error",
