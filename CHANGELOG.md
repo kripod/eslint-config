@@ -1,5 +1,11 @@
 # @kripod/eslint-config
 
+## 0.3.0
+
+### Minor Changes
+
+- [`04421bf`](https://github.com/kripod/eslint-config/commit/04421bf17a4cccd3bda8d3d57ace63659a942d3e) Thanks [@kripod](https://github.com/kripod)! - feat(type-checked): enable '@typescript-eslint/related-getter-setter-pairs'
+
 ## 0.2.2
 
 ### Patch Changes
