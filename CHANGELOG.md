@@ -1,5 +1,15 @@
 # @kripod/eslint-config
 
+## 0.4.0
+
+### Minor Changes
+
+- [`e4d1b4c`](https://github.com/kripod/eslint-config/commit/e4d1b4cc675480171fbd87a0f5f26db74b005dc5) Thanks [@kripod](https://github.com/kripod)! - refactor(type-checked): check strings with '@typescript-eslint/prefer-nullish-coalescing'
+
+### Patch Changes
+
+- [`17a1a42`](https://github.com/kripod/eslint-config/commit/17a1a429f499a82c9022899da6d1d8e12fe681f3) Thanks [@kripod](https://github.com/kripod)! - refactor(type-checked): reduce severity of some '@typescript-eslint/no-unsafe-\*' rules to 'warn'
+
 ## 0.3.0
 
 ### Minor Changes
