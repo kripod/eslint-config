@@ -10,7 +10,7 @@ Pragmatic ESLint config for robust collaboration
 - Exhaustive [flat configs](https://eslint.org/docs/latest/use/configure/configuration-files) for ESLint v9+
 - Distinct severities
   - Error on potential bugs, ambiguities and unsafe/legacy constructs
-  - Warn about incompletions and unification opportunities
+  - Warn about incompletions, lack of affordance and unification opportunities
 - Composable entry points
 
 ## Usage
