@@ -80,14 +80,7 @@ const config: Linter.Config[] = [
         coreRules["prefer-destructuring"],
       "@typescript-eslint/prefer-find": "warn",
       "@typescript-eslint/prefer-includes": "warn",
-      "@typescript-eslint/prefer-nullish-coalescing": [
-        "error",
-        {
-          ignorePrimitives: {
-            string: true,
-          },
-        },
-      ],
+      "@typescript-eslint/prefer-nullish-coalescing": "error",
       "@typescript-eslint/prefer-optional-chain": [
         "warn",
         { requireNullish: true },
