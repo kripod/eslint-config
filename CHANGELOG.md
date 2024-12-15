@@ -1,5 +1,11 @@
 # @kripod/eslint-config
 
+## 0.4.1
+
+### Patch Changes
+
+- [`48ef957`](https://github.com/kripod/eslint-config/commit/48ef95704164a6bcf991dd9195eda3809dbb3f04) Thanks [@kripod](https://github.com/kripod)! - fix(type-checked): allow `Promise` rejection with `any`/`unknown`
+
 ## 0.4.0
 
 ### Minor Changes
