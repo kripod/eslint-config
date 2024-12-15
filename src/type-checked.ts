@@ -89,8 +89,13 @@ const config: Linter.Config[] = [
       "prefer-promise-reject-errors": "off",
       // TODO: Allow `any` and `unknown`
       // https://github.com/typescript-eslint/typescript-eslint/issues/10375
-      "@typescript-eslint/prefer-promise-reject-errors":
+      "@typescript-eslint/prefer-promise-reject-errors": [
         coreRules["prefer-promise-reject-errors"],
+        {
+          allowThrowingAny: true,
+          allowThrowingUnknown: true,
+        },
+      ],
 
       "@typescript-eslint/prefer-readonly": "off",
       "@typescript-eslint/prefer-readonly-parameter-types": "off",
