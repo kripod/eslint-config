@@ -255,9 +255,7 @@ export const coreRules = {
     },
   ],
   "no-use-before-define": ["error", { functions: false }],
-
-  // Produces false positives with JSX
-  "no-useless-assignment": "off",
+  "no-useless-assignment": "warn",
 
   // TODO: Disable when using 'eslint-plugin-regexp'
   "no-useless-backreference": "warn",
