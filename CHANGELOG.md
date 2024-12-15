@@ -1,5 +1,11 @@
 # @kripod/eslint-config
 
+## 0.5.1
+
+### Patch Changes
+
+- [`8e27615`](https://github.com/kripod/eslint-config/commit/8e276156105c9cdf74f4a2937dfd9e001fb90ac0) Thanks [@kripod](https://github.com/kripod)! - fix(base): disable 'no-useless-assignment' due to false positives
+
 ## 0.5.0
 
 ### Minor Changes
