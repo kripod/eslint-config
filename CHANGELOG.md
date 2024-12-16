@@ -1,5 +1,11 @@
 # @kripod/eslint-config
 
+## 0.5.2
+
+### Patch Changes
+
+- [`c257d0d`](https://github.com/kripod/eslint-config/commit/c257d0def453923ec46e04333dd1d0bcd384cdf0) Thanks [@kripod](https://github.com/kripod)! - docs: update usage guidelines for TypeScript
+
 ## 0.5.1
 
 ### Patch Changes
