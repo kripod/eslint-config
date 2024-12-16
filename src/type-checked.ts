@@ -132,7 +132,7 @@ const config: Linter.Config[] = [
           allowNullableEnum: true,
           allowNullableNumber: false,
           allowNullableObject: true,
-          allowNullableString: true,
+          allowNullableString: false,
           allowNumber: false,
           allowString: true,
         },
