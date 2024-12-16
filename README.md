@@ -44,7 +44,10 @@ export default [
 ];
 ```
 
-If using TypeScript, enable [`strictNullChecks`](https://www.typescriptlang.org/tsconfig/#strictNullChecks) e.g. via [`@total-typescript/tsconfig`](https://github.com/total-typescript/tsconfig) or the [`strict`](https://www.typescriptlang.org/tsconfig/#strict) compiler option.
+If using TypeScript, consider adopting [`@total-typescript/tsconfig`](https://github.com/total-typescript/tsconfig) or:
+
+- Enable [`strictNullChecks`](https://www.typescriptlang.org/tsconfig/#strictNullChecks) or the broader [`strict`](https://www.typescriptlang.org/tsconfig/#strict) compiler option
+- Set [`module`](https://www.typescriptlang.org/tsconfig/#module) to `Preserve` or `NodeNext`, as package entry points may fail to resolve otherwise
 
 ### Presets
 
