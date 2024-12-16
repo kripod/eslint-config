@@ -1,5 +1,11 @@
 # @kripod/eslint-config
 
+## 0.6.0
+
+### Minor Changes
+
+- [`cfec99e`](https://github.com/kripod/eslint-config/commit/cfec99ef1dbeb27edd04ae55f6a505a2096677ad) Thanks [@kripod](https://github.com/kripod)! - feat(type-checked): disallow nullable strings in boolean expressions
+
 ## 0.5.2
 
 ### Patch Changes
