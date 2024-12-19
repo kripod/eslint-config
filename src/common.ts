@@ -19,8 +19,9 @@ export const coreRules = {
   "class-methods-use-this": "off",
   complexity: "off",
 
-  // Covered by `noImplicitReturns` of TypeScript
+  // Covered by `noImplicitReturns` or `strictNullChecks` of TypeScript
   // https://github.com/typescript-eslint/typescript-eslint/issues/4510
+  // https://github.com/microsoft/TypeScript/issues/51312
   "consistent-return": "off",
 
   "consistent-this": "off",
