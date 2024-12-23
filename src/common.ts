@@ -59,7 +59,7 @@ export const coreRules = {
   "no-array-constructor": "error",
   "no-async-promise-executor": "error",
   "no-await-in-loop": "warn",
-  "no-bitwise": "error",
+  "no-bitwise": "warn",
   "no-caller": "error",
   "no-case-declarations": "error",
   "no-class-assign": "error",
