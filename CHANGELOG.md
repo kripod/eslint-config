@@ -1,5 +1,13 @@
 # @kripod/eslint-config
 
+## 0.6.1
+
+### Patch Changes
+
+- [`4b8e8e1`](https://github.com/kripod/eslint-config/commit/4b8e8e1d801d8e9c096e181d9e2e66924abccdc6) Thanks [@kripod](https://github.com/kripod)! - refactor(base): allow elevated loggers by 'no-console'
+
+- [`ac6ba77`](https://github.com/kripod/eslint-config/commit/ac6ba77f7a12f2b2954e104a9453f0221e0c434d) Thanks [@kripod](https://github.com/kripod)! - refactor(base): reduce severity of 'no-bitwise' to 'warn'
+
 ## 0.6.0
 
 ### Minor Changes
