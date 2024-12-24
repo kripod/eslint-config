@@ -1,5 +1,4 @@
 import globals from "globals";
-
 import baseConfig from "./dist/esm/base.js";
 import typeCheckedConfig from "./dist/esm/type-checked.js";
 

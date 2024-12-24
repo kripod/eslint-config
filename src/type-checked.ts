@@ -1,6 +1,5 @@
 import type { Linter } from "eslint";
 import tseslint from "typescript-eslint";
-
 import { coreRules } from "./common.js";
 
 const config: Linter.Config[] = [

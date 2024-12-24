@@ -1,0 +1,4 @@
+{
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+  "importOrderTypeScriptVersion": "4.5.0"
+}
