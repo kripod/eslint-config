@@ -15,13 +15,14 @@ Pragmatic ESLint config for robust collaboration
 
 ## Usage
 
-Install as a dev dependency:
+Install as a dev dependency alongside ESLint and [predefined global variables](https://eslint.org/docs/latest/use/configure/language-options#predefined-global-variables):
 
 ```sh
 pnpm add -D @kripod/eslint-config
+pnpm add -D eslint globals
 ```
 
-Set up ESLint with [predefined global variables](https://eslint.org/docs/latest/use/configure/language-options#predefined-global-variables):
+Set up ESLint:
 
 ```js
 // eslint.config.js
@@ -49,6 +50,18 @@ If using TypeScript, consider adopting [`@total-typescript/tsconfig`](https://gi
 
 - Enable [`strictNullChecks`](https://www.typescriptlang.org/tsconfig/#strictNullChecks) or the broader [`strict`](https://www.typescriptlang.org/tsconfig/#strict) compiler option
 - Set [`module`](https://www.typescriptlang.org/tsconfig/#module) to `Preserve` or `NodeNext`, as package entry points may fail to resolve otherwise
+
+Package scripts can be added for convenience:
+
+```jsonc
+// package.json
+{
+  "scripts": {
+    "lint:js+ts": "eslint .",
+    "lint:fix:js+ts": "eslint --fix .",
+  },
+}
+```
 
 ### Presets
 
