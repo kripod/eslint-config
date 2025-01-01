@@ -42,9 +42,11 @@
     "clean": "git clean --interactive -dx --exclude node_modules/",
     "build:inspector": "eslint-config-inspector build",
     "lint": "pnpm run \"/^lint:(?!fix)/\"",
+    "lint:js+ts": "eslint .",
     "lint:format": "prettier --check .",
     "lint:types": "tsc --noEmit",
     "lint:fix": "pnpm run \"/^lint:fix:/\"",
+    "lint:fix:js+ts": "eslint --fix .",
     "lint:fix:format": "prettier --write ."
   },
   "dependencies": {
