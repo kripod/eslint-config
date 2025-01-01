@@ -1,5 +1,19 @@
 # @kripod/eslint-config
 
+## 0.6.2
+
+### Patch Changes
+
+- [`7d11ed1`](https://github.com/kripod/eslint-config/commit/7d11ed19f1e73a8114c56d235930b2173f230d17) Thanks [@kripod](https://github.com/kripod)! - feat(meta): expose 'package.json' as an entry point
+
+- [`8e26e09`](https://github.com/kripod/eslint-config/commit/8e26e0971d1a0972fa66e0dd01585659c08a1419) Thanks [@kripod](https://github.com/kripod)! - docs: move additional setup steps to the bottom
+
+- [`cbe7d7e`](https://github.com/kripod/eslint-config/commit/cbe7d7e04096231d962a08cbb100fbb40ccfda79) Thanks [@kripod](https://github.com/kripod)! - docs: link presets section early
+
+- [`b96ee08`](https://github.com/kripod/eslint-config/commit/b96ee0890ad816d062eeb67b6d2a2a4673b2d07b) Thanks [@kripod](https://github.com/kripod)! - docs: broaden instructions
+
+- [`5dd7fd7`](https://github.com/kripod/eslint-config/commit/5dd7fd7d7ae1754674da80a406ecadd4906a72f7) Thanks [@kripod](https://github.com/kripod)! - docs: include 'ignores' in sample config
+
 ## 0.6.1
 
 ### Patch Changes
