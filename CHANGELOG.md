@@ -1,5 +1,11 @@
 # @kripod/eslint-config
 
+## 0.6.3
+
+### Patch Changes
+
+- [`ff53bc0`](https://github.com/kripod/eslint-config/commit/ff53bc0e575be5300a5f7c4a3e2fbf8013194288) Thanks [@kripod](https://github.com/kripod)! - docs(scripts): improve composability
+
 ## 0.6.2
 
 ### Patch Changes
