@@ -65,8 +65,8 @@ Package scripts may be added for convenience:
 // package.json
 {
   "scripts": {
-    "lint:js+ts": "eslint .",
-    "lint:fix:js+ts": "eslint --fix .",
+    "lint:js+ts": "eslint",
+    "lint:fix:js+ts": "eslint --fix",
   },
 }
 ```
