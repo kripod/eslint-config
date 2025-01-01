@@ -51,7 +51,15 @@ If using TypeScript, consider adopting [`@total-typescript/tsconfig`](https://gi
 - Enable [`strictNullChecks`](https://www.typescriptlang.org/tsconfig/#strictNullChecks) or the broader [`strict`](https://www.typescriptlang.org/tsconfig/#strict) compiler option
 - Set [`module`](https://www.typescriptlang.org/tsconfig/#module) to `Preserve` or `NodeNext`, as package entry points may fail to resolve otherwise
 
-Package scripts can be added for convenience:
+### Presets
+
+- `base` — JS + TS, no framework-specific rules
+- `type-checked` — Typed linting via [project service](https://typescript-eslint.io/troubleshooting/typed-linting/#project-service-issues)
+  - [Complements native-speed linters](https://typescript-eslint.io/troubleshooting/faqs/general/#how-does-typescript-eslint-compare-to-native-speed-linters)
+
+### Additional setup
+
+Package scripts may be added for convenience:
 
 ```jsonc
 // package.json
@@ -62,9 +70,3 @@ Package scripts can be added for convenience:
   },
 }
 ```
-
-### Presets
-
-- `base` — JS + TS, no framework-specific rules
-- `type-checked` — Typed linting via [project service](https://typescript-eslint.io/troubleshooting/typed-linting/#project-service-issues)
-  - [Complements native-speed linters](https://typescript-eslint.io/troubleshooting/faqs/general/#how-does-typescript-eslint-compare-to-native-speed-linters)
