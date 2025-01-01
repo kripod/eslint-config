@@ -32,7 +32,8 @@
         "types": "./dist/commonjs/type-checked.d.ts",
         "default": "./dist/commonjs/type-checked.js"
       }
-    }
+    },
+    "./package.json": "./package.json"
   },
   "files": [
     "dist/"
@@ -72,9 +73,10 @@
   },
   "packageManager": "pnpm@9.15.1",
   "tshy": {
-    "exports": {
-      "./base": "./src/base.ts",
-      "./type-checked": "./src/type-checked.ts"
-    }
+    "project": "./tsconfig.build.json",
+    "exports": [
+      "./src/base.ts",
+      "./src/type-checked.ts"
+    ]
   }
 }
