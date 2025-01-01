@@ -22,7 +22,7 @@ pnpm add -D @kripod/eslint-config
 pnpm add -D eslint globals
 ```
 
-Set up ESLint:
+Set up ESLint with [presets documented below](#presets):
 
 ```js
 // eslint.config.js
