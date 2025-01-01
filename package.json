@@ -45,7 +45,7 @@
     "lint": "pnpm run \"/^lint:(?!fix)/\"",
     "lint:js+ts": "eslint .",
     "lint:format": "prettier --check .",
-    "lint:types": "tsc --noEmit",
+    "lint:types": "tsc",
     "lint:fix": "pnpm run \"/^lint:fix:/\"",
     "lint:fix:js+ts": "eslint --fix .",
     "lint:fix:format": "prettier --write ."
