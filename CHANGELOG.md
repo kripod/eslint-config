@@ -1,5 +1,11 @@
 # @kripod/eslint-config
 
+## 0.6.4
+
+### Patch Changes
+
+- [`b723bb3`](https://github.com/kripod/eslint-config/commit/b723bb374b10eff30a12c30d1dc85d8221b759eb) Thanks [@kripod](https://github.com/kripod)! - docs(config): change globals recommended by default
+
 ## 0.6.3
 
 ### Patch Changes
