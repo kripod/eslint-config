@@ -25,10 +25,7 @@ const tseslintRules = {
   "@typescript-eslint/consistent-indexed-object-style": "off",
   "@typescript-eslint/consistent-type-assertions": [
     "error",
-    {
-      assertionStyle: "as",
-      objectLiteralTypeAssertions: "allow-as-parameter",
-    },
+    { objectLiteralTypeAssertions: "allow-as-parameter" },
   ],
   "@typescript-eslint/consistent-type-definitions": "warn",
 
