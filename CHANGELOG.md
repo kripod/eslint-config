@@ -1,5 +1,13 @@
 # @kripod/eslint-config
 
+## 0.6.5
+
+### Patch Changes
+
+- [`207804a`](https://github.com/kripod/eslint-config/commit/207804ac04ab81631422eb34e59a1f4273622ae6) Thanks [@kripod](https://github.com/kripod)! - refactor(base): allow `continue` statements
+
+- [`8238053`](https://github.com/kripod/eslint-config/commit/8238053da3d3c29d1991753d5898c2a66625a6bc) Thanks [@kripod](https://github.com/kripod)! - refactor(base): allow 'debug' and 'info' logging to the console
+
 ## 0.6.4
 
 ### Patch Changes
