@@ -65,7 +65,7 @@ export const coreRules = {
   "no-class-assign": "error",
   "no-compare-neg-zero": "error",
   "no-cond-assign": "error",
-  "no-console": ["warn", { allow: ["warn", "error"] }],
+  "no-console": ["warn", { allow: ["debug", "info", "warn", "error"] }],
   "no-const-assign": "error",
   "no-constant-binary-expression": "error",
   "no-constant-condition": "error",
