@@ -28,10 +28,10 @@ Set up ESLint with [presets documented below](#presets):
 // eslint.config.js
 import baseConfig from "@kripod/eslint-config/base";
 import typeCheckedConfig from "@kripod/eslint-config/type-checked";
+import { defineConfig } from "eslint/config";
 import globals from "globals";
 
-/** @type {import("eslint").Linter.Config[]} */
-export default [
+export default defineConfig([
   { files: ["**/*.ts", "**/*.mts", "**/*.cts", "**/*.jsx", "**/*.tsx"] },
   { ignores: ["dist/"] },
   ...baseConfig,
@@ -43,7 +43,7 @@ export default [
       },
     },
   },
-];
+]);
 ```
 
 If using TypeScript, consider adopting [`@total-typescript/tsconfig`](https://github.com/total-typescript/tsconfig) or:

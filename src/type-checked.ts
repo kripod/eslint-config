@@ -1,8 +1,9 @@
 import type { Linter } from "eslint";
+import { defineConfig } from "eslint/config";
 import tseslint from "typescript-eslint";
 import { coreRules } from "./common.js";
 
-const config: Linter.Config[] = [
+export default defineConfig([
   {
     ...(tseslint.configs.base as Linter.Config),
     name: "kripod/type-checked/setup",
@@ -147,6 +148,4 @@ const config: Linter.Config[] = [
       "@typescript-eslint/use-unknown-in-catch-callback-variable": "warn",
     },
   },
-];
-
-export default config;
+]);
