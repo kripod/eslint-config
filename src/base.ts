@@ -132,6 +132,7 @@ const tseslintRules = {
     {
       // For docs generation
       ignoreDifferentlyNamedParameters: true,
+      ignoreOverloadsWithDifferentJSDoc: true,
     },
   ],
 } satisfies TSESLint.FlatConfig.Rules;
