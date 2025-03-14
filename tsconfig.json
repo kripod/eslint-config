@@ -4,6 +4,7 @@
   "exclude": ["dist/", ".tshy-build/"],
   "compilerOptions": {
     "noEmit": true,
-    "checkJs": true
+    "checkJs": true,
+    "erasableSyntaxOnly": true
   }
 }
