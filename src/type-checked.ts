@@ -51,6 +51,7 @@ export default defineConfig([
           },
         },
       ],
+      "@typescript-eslint/no-misused-spread": "error",
       "@typescript-eslint/no-mixed-enums": "error",
       "@typescript-eslint/no-redundant-type-constituents": "warn",
       "@typescript-eslint/no-unnecessary-boolean-literal-compare": "warn",
