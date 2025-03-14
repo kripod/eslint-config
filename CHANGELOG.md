@@ -1,5 +1,19 @@
 # @kripod/eslint-config
 
+## 0.7.0
+
+### Minor Changes
+
+- [`553d05d`](https://github.com/kripod/eslint-config/commit/553d05d217427ddc6b63c6872f796aeb4fc33d3d) Thanks [@kripod](https://github.com/kripod)! - feat(type-checked): enable 'no-misused-spread'
+
+- [`916d052`](https://github.com/kripod/eslint-config/commit/916d052fd0c91938f0e6785f15a0c3c300b16279) Thanks [@kripod](https://github.com/kripod)! - feat(base): constrain array literal type assertions
+
+### Patch Changes
+
+- [`71cbebf`](https://github.com/kripod/eslint-config/commit/71cbebfcba2cdd6cce8e0826ac275140cc79ca8a) Thanks [@kripod](https://github.com/kripod)! - fix(base): disable unified signature warnings for overloads with different JSDoc
+
+- [`b498fed`](https://github.com/kripod/eslint-config/commit/b498fed65e6618e2a6e82a42a20167b48a927b57) Thanks [@kripod](https://github.com/kripod)! - docs: recommend `defineConfig()` helper in usage example
+
 ## 0.6.5
 
 ### Patch Changes
