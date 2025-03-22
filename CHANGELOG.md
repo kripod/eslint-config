@@ -1,5 +1,13 @@
 # @kripod/eslint-config
 
+## 0.8.0
+
+### Minor Changes
+
+- [`5565ad9`](https://github.com/kripod/eslint-config/commit/5565ad9bb608641a7f9ba228e8619fba4de92b45) Thanks [@kripod](https://github.com/kripod)! - refactor(base): replace some TS extension rules with their core counterparts
+
+- [`13bc62a`](https://github.com/kripod/eslint-config/commit/13bc62a8bf18750daad251cf7a6e8f334ce7487b) Thanks [@kripod](https://github.com/kripod)! - feat(base): enable 'no-useless-assignment'
+
 ## 0.7.0
 
 ### Minor Changes
