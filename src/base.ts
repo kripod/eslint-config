@@ -19,9 +19,10 @@ const tseslintRules = {
     // Enforcement at runtime
     "getters",
   ],
-  "class-methods-use-this": "off",
-  "@typescript-eslint/class-methods-use-this":
-    coreRules["class-methods-use-this"],
+
+  // Covered by core rule
+  "@typescript-eslint/class-methods-use-this": "off",
+
   "@typescript-eslint/consistent-generic-constructors": "warn",
   "@typescript-eslint/consistent-indexed-object-style": "off",
   "@typescript-eslint/consistent-type-assertions": [
@@ -36,8 +37,9 @@ const tseslintRules = {
   // Covered by `verbatimModuleSyntax` of TypeScript
   "@typescript-eslint/consistent-type-imports": "off",
 
-  "default-param-last": "off",
-  "@typescript-eslint/default-param-last": coreRules["default-param-last"],
+  // Covered by core rule
+  "@typescript-eslint/default-param-last": "off",
+
   "@typescript-eslint/explicit-function-return-type": "off",
   "@typescript-eslint/explicit-member-accessibility": [
     "warn",
@@ -110,9 +112,10 @@ const tseslintRules = {
   "@typescript-eslint/no-unused-vars": coreRules["no-unused-vars"],
   "no-use-before-define": "off",
   "@typescript-eslint/no-use-before-define": coreRules["no-use-before-define"],
-  "no-useless-constructor": "off",
-  "@typescript-eslint/no-useless-constructor":
-    coreRules["no-useless-constructor"],
+
+  // Covered by core rule
+  "@typescript-eslint/no-useless-constructor": "off",
+
   "@typescript-eslint/no-useless-empty-export": "warn",
   "@typescript-eslint/no-wrapper-object-types": "error",
   "@typescript-eslint/parameter-properties": "error",
