@@ -256,10 +256,7 @@ export const coreRules = {
     },
   ],
   "no-use-before-define": ["error", { functions: false }],
-
-  // TODO: Enable once false positives are resolved
-  // https://github.com/eslint/eslint/issues/19245
-  "no-useless-assignment": "off",
+  "no-useless-assignment": "warn",
 
   // TODO: Disable when using 'eslint-plugin-regexp'
   "no-useless-backreference": "warn",
