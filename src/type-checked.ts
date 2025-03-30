@@ -88,8 +88,6 @@ export default defineConfig([
       ],
 
       "prefer-promise-reject-errors": "off",
-      // TODO: Allow `any` and `unknown`
-      // https://github.com/typescript-eslint/typescript-eslint/issues/10375
       "@typescript-eslint/prefer-promise-reject-errors": [
         coreRules["prefer-promise-reject-errors"],
         {
