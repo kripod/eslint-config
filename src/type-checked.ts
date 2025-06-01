@@ -67,6 +67,7 @@ export default defineConfig([
         "warn",
         { checkLiteralConstAssertions: true },
       ],
+      "@typescript-eslint/no-unnecessary-type-conversion": "warn",
       "@typescript-eslint/no-unnecessary-type-parameters": "warn",
       "@typescript-eslint/no-unsafe-argument": "warn",
       "@typescript-eslint/no-unsafe-assignment": "warn",
