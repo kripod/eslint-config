@@ -1,5 +1,19 @@
 # @kripod/eslint-config
 
+## 0.9.0
+
+### Minor Changes
+
+- [`70766c5`](https://github.com/kripod/eslint-config/commit/70766c5940c36a360c38843c557a026b5952e498) Thanks [@kripod](https://github.com/kripod)! - refactor(base): replace some TS extension rules with their core counterparts
+
+- [`1d9e33e`](https://github.com/kripod/eslint-config/commit/1d9e33ef6acabd74cee51af28f43721e62513aaa) Thanks [@kripod](https://github.com/kripod)! - feat(type-checked): disallow unnecessary literal const assertions
+
+- [`e11eede`](https://github.com/kripod/eslint-config/commit/e11eede92b13312f365d53e2f00fe75203a74acf) Thanks [@kripod](https://github.com/kripod)! - feat(base): disallow shadowing `globalThis`
+
+- [`71c3b7d`](https://github.com/kripod/eslint-config/commit/71c3b7de22bfc5c3e66acef12b9999b2e6d877c2) Thanks [@kripod](https://github.com/kripod)! - feat(type-checked): enable 'no-unnecessary-type-conversion'
+
+- [`815a6ee`](https://github.com/kripod/eslint-config/commit/815a6ee66e3ec8e413e9c71f663dab2ef7799967) Thanks [@kripod](https://github.com/kripod)! - feat(base): enable 'no-unassigned-vars'
+
 ## 0.8.0
 
 ### Minor Changes
