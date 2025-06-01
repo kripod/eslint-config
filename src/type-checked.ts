@@ -63,7 +63,10 @@ export default defineConfig([
       "@typescript-eslint/no-unnecessary-qualifier": "warn",
       "@typescript-eslint/no-unnecessary-template-expression": "warn",
       "@typescript-eslint/no-unnecessary-type-arguments": "warn",
-      "@typescript-eslint/no-unnecessary-type-assertion": "warn",
+      "@typescript-eslint/no-unnecessary-type-assertion": [
+        "warn",
+        { checkLiteralConstAssertions: true },
+      ],
       "@typescript-eslint/no-unnecessary-type-parameters": "warn",
       "@typescript-eslint/no-unsafe-argument": "warn",
       "@typescript-eslint/no-unsafe-assignment": "warn",
