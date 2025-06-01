@@ -226,7 +226,7 @@ export const coreRules = {
   "no-ternary": "off",
   "no-this-before-super": "error",
   "no-throw-literal": "error",
-  "no-unassigned-vars": "off",
+  "no-unassigned-vars": "warn",
   "no-undef": "error",
   "no-undef-init": "warn",
   "no-undefined": "off",
