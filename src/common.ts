@@ -220,7 +220,7 @@ export const coreRules = {
   "no-sequences": "error",
   "no-setter-return": "error",
   "no-shadow": "error",
-  "no-shadow-restricted-names": "error",
+  "no-shadow-restricted-names": ["error", { reportGlobalThis: true }],
   "no-sparse-arrays": "error",
   "no-template-curly-in-string": "error",
   "no-ternary": "off",
