@@ -51,22 +51,30 @@ const tseslintRules = {
     },
   ],
   "@typescript-eslint/explicit-module-boundary-types": "off",
-  "init-declarations": "off",
-  "@typescript-eslint/init-declarations": coreRules["init-declarations"],
-  "max-params": "off",
-  "@typescript-eslint/max-params": coreRules["max-params"],
+
+  // Covered by core rule
+  "@typescript-eslint/init-declarations": "off",
+
+  // Covered by core rule
+  "@typescript-eslint/max-params": "off",
+
   "@typescript-eslint/member-ordering": "off",
   "@typescript-eslint/method-signature-style": "error",
-  "no-array-constructor": "off",
-  "@typescript-eslint/no-array-constructor": coreRules["no-array-constructor"],
+
+  // Covered by core rule
+  "@typescript-eslint/no-array-constructor": "off",
+
   "@typescript-eslint/no-confusing-non-null-assertion": "warn",
-  "no-dupe-class-members": "off",
-  "@typescript-eslint/no-dupe-class-members":
-    coreRules["no-dupe-class-members"],
+
+  // Covered by core rule
+  "@typescript-eslint/no-dupe-class-members": "off",
+
   "@typescript-eslint/no-duplicate-enum-values": "warn",
   "@typescript-eslint/no-dynamic-delete": "error",
-  "no-empty-function": "off",
-  "@typescript-eslint/no-empty-function": coreRules["no-empty-function"],
+
+  // Covered by core rule
+  "@typescript-eslint/no-empty-function": "off",
+
   "@typescript-eslint/no-empty-object-type": [
     "warn",
     { allowInterfaces: "with-single-extends" },
@@ -76,16 +84,21 @@ const tseslintRules = {
   "@typescript-eslint/no-extraneous-class": "warn",
   "@typescript-eslint/no-import-type-side-effects": "error",
   "@typescript-eslint/no-inferrable-types": "warn",
-  "no-invalid-this": "off",
-  "@typescript-eslint/no-invalid-this": coreRules["no-invalid-this"],
+
+  // Covered by core rule
+  "@typescript-eslint/no-invalid-this": "off",
+
   "@typescript-eslint/no-invalid-void-type": [
     "error",
     { allowAsThisParameter: true },
   ],
-  "no-loop-func": "off",
-  "@typescript-eslint/no-loop-func": coreRules["no-loop-func"],
-  "no-magic-numbers": "off",
-  "@typescript-eslint/no-magic-numbers": coreRules["no-magic-numbers"],
+
+  // Covered by core rule
+  "@typescript-eslint/no-loop-func": "off",
+
+  // Covered by core rule
+  "@typescript-eslint/no-magic-numbers": "off",
+
   "@typescript-eslint/no-misused-new": "error",
   "@typescript-eslint/no-namespace": "error",
   "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
@@ -98,20 +111,24 @@ const tseslintRules = {
   "@typescript-eslint/no-restricted-imports":
     coreRules["no-restricted-imports"],
   "@typescript-eslint/no-restricted-types": "off",
-  "no-shadow": "off",
-  "@typescript-eslint/no-shadow": coreRules["no-shadow"],
+
+  // Covered by core rule
+  "@typescript-eslint/no-shadow": "off",
+
   "@typescript-eslint/no-this-alias": "error",
   "@typescript-eslint/no-unnecessary-parameter-property-assignment": "warn",
   "@typescript-eslint/no-unnecessary-type-constraint": "warn",
   "@typescript-eslint/no-unsafe-declaration-merging": "error",
   "@typescript-eslint/no-unsafe-function-type": "error",
-  "no-unused-expressions": "off",
-  "@typescript-eslint/no-unused-expressions":
-    coreRules["no-unused-expressions"],
+
+  // Covered by core rule
+  "@typescript-eslint/no-unused-expressions": "off",
+
   "no-unused-vars": "off",
   "@typescript-eslint/no-unused-vars": coreRules["no-unused-vars"],
-  "no-use-before-define": "off",
-  "@typescript-eslint/no-use-before-define": coreRules["no-use-before-define"],
+
+  // Covered by core rule
+  "@typescript-eslint/no-use-before-define": "off",
 
   // Covered by core rule
   "@typescript-eslint/no-useless-constructor": "off",
