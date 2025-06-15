@@ -270,11 +270,7 @@ export const coreRules = {
   "no-useless-escape": "warn",
   "no-useless-rename": "warn",
   "no-useless-return": "warn",
-
-  // TODO: Support declaring global variables
-  // https://github.com/typescript-eslint/typescript-eslint/issues/7941
   "no-var": "error",
-
   "no-void": [
     "error",
     {
