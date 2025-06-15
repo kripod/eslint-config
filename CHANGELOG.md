@@ -1,5 +1,11 @@
 # @kripod/eslint-config
 
+## 0.10.0
+
+### Minor Changes
+
+- [`ef5e13f`](https://github.com/kripod/eslint-config/commit/ef5e13ff5b396b6e72d7172f9b3f1052b9cd05d4) Thanks [@kripod](https://github.com/kripod)! - feat(type-checked): disallow nullable enums in boolean expressions
+
 ## 0.9.0
 
 ### Minor Changes
