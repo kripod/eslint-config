@@ -131,8 +131,7 @@ export default defineConfig([
         {
           allowAny: true,
           allowNullableBoolean: true,
-          // TODO: Consider `false` without autofix
-          allowNullableEnum: true,
+          allowNullableEnum: false,
           allowNullableNumber: false,
           allowNullableObject: true,
           allowNullableString: false,
