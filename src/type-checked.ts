@@ -30,7 +30,7 @@ export default defineConfig([
       "@typescript-eslint/naming-convention": "off",
 
       "@typescript-eslint/no-array-delete": "error",
-      "@typescript-eslint/no-base-to-string": "error",
+      "@typescript-eslint/no-base-to-string": ["error", { checkUnknown: true }],
       "@typescript-eslint/no-confusing-void-expression": [
         "warn",
         { ignoreArrowShorthand: true },
