@@ -115,7 +115,13 @@ export default defineConfig([
       ],
       "@typescript-eslint/restrict-template-expressions": [
         "error",
-        { allowNullish: false },
+        {
+          allowAny: false,
+          allowBoolean: false,
+          allowNullish: false,
+          allowNumber: false,
+          allowRegExp: false,
+        },
       ],
       "@typescript-eslint/return-await": ["error", "always"],
       "@typescript-eslint/strict-boolean-expressions": [
