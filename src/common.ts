@@ -97,7 +97,7 @@ export const coreRules = {
   "no-empty-pattern": "warn",
   "no-empty-static-block": "warn",
   "no-eq-null": "off",
-  "no-eval": "error",
+  "no-eval": ["error", { allowIndirect: true }],
   "no-ex-assign": "warn",
   "no-extend-native": "error",
   "no-extra-bind": "warn",
