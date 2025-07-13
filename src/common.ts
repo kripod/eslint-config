@@ -85,7 +85,7 @@ export const coreRules = {
   "no-duplicate-case": "error",
 
   // TODO: Replace with 'import/no-duplicates'
-  "no-duplicate-imports": "error",
+  "no-duplicate-imports": ["error", { allowSeparateTypeImports: true }],
 
   "no-else-return": ["warn", { allowElseIf: false }],
   "no-empty": ["warn", { allowEmptyCatch: true }],
