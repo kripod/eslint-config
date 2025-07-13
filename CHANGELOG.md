@@ -1,5 +1,23 @@
 # @kripod/eslint-config
 
+## 0.11.0
+
+### Minor Changes
+
+- [`d4e1882`](https://github.com/kripod/eslint-config/commit/d4e1882750369d6452749200570b4875b72fe9ae) Thanks [@kripod](https://github.com/kripod)! - feat(type-checked): enforce safe stringification for unknown values
+
+- [`f8b223f`](https://github.com/kripod/eslint-config/commit/f8b223fc8b58e8e4a40eb894227c6d01235e56c6) Thanks [@kripod](https://github.com/kripod)! - feat(type-checked): disallow misusing Promises entirely
+
+- [`520639f`](https://github.com/kripod/eslint-config/commit/520639f805876704c1c5e99f66750797bd58eab1) Thanks [@kripod](https://github.com/kripod)! - fix(type-checked): harden `restrict-template-expressions` options to match `restrict-plus-operands`
+
+### Patch Changes
+
+- [`9aeabbf`](https://github.com/kripod/eslint-config/commit/9aeabbf54c4bbcef5eb1823b2fc035d9fba19141) Thanks [@kripod](https://github.com/kripod)! - refactor: reduce severity and strictness of mostly non-runtime issues
+
+- [`1f5c35e`](https://github.com/kripod/eslint-config/commit/1f5c35e18579b0ee0582d6d2bf394fec34abcd31) Thanks [@kripod](https://github.com/kripod)! - feat(base): allow indirect `eval`
+
+- [`3f5d355`](https://github.com/kripod/eslint-config/commit/3f5d3554beccf3553f0911b727923a3c58405a1b) Thanks [@kripod](https://github.com/kripod)! - fix(base): allow separate type imports for a given module
+
 ## 0.10.0
 
 ### Minor Changes
