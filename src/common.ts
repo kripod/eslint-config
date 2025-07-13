@@ -4,7 +4,7 @@ import type { ESLintRules } from "eslint/rules";
 export const coreRules = {
   "accessor-pairs": "warn",
   "array-callback-return": "error",
-  "arrow-body-style": "warn",
+  "arrow-body-style": "off",
   "block-scoped-var": "error",
   camelcase: [
     "warn",
@@ -98,7 +98,7 @@ export const coreRules = {
   "no-empty-static-block": "warn",
   "no-eq-null": "off",
   "no-eval": "error",
-  "no-ex-assign": "error",
+  "no-ex-assign": "warn",
   "no-extend-native": "error",
   "no-extra-bind": "warn",
   "no-extra-boolean-cast": ["warn", { enforceForInnerExpressions: true }],
@@ -161,7 +161,7 @@ export const coreRules = {
   "no-object-constructor": "error",
   "no-octal": "error",
   "no-octal-escape": "error",
-  "no-param-reassign": ["error", { props: true }],
+  "no-param-reassign": ["warn", { props: true }],
 
   // Postfix operators have a side effect, while `+=`/`-=` are unambiguous
   // https://www.informit.com/articles/article.aspx?p=2425867#:~:text=%233%3A%20I%20rate%20plus%2Dplus%20a%20minus%2Dminus
@@ -219,7 +219,7 @@ export const coreRules = {
   "no-self-compare": "warn",
   "no-sequences": "error",
   "no-setter-return": "error",
-  "no-shadow": "error",
+  "no-shadow": "warn",
   "no-shadow-restricted-names": ["error", { reportGlobalThis: true }],
   "no-sparse-arrays": "error",
   "no-template-curly-in-string": "error",
@@ -237,15 +237,15 @@ export const coreRules = {
   "no-unexpected-multiline": "error",
   "no-unmodified-loop-condition": "error",
   "no-unneeded-ternary": ["warn", { defaultAssignment: false }],
-  "no-unreachable": "error",
-  "no-unreachable-loop": "error",
+  "no-unreachable": "warn",
+  "no-unreachable-loop": "warn",
   "no-unsafe-finally": "error",
   "no-unsafe-negation": ["error", { enforceForOrderingRelations: true }],
   "no-unsafe-optional-chaining": [
     "error",
     { disallowArithmeticOperators: true },
   ],
-  "no-unused-expressions": ["error", { enforceForJSX: true }],
+  "no-unused-expressions": ["warn", { enforceForJSX: true }],
   "no-unused-labels": "warn",
   "no-unused-private-class-members": "warn",
   "no-unused-vars": [
@@ -318,7 +318,7 @@ export const coreRules = {
   // TODO: Replace with 'regexp/require-unicode-regexp'
   "require-unicode-regexp": "error",
 
-  "require-yield": "error",
+  "require-yield": "warn",
   "sort-imports": "off",
   "sort-keys": "off",
   "sort-vars": "off",
@@ -327,6 +327,6 @@ export const coreRules = {
   "unicode-bom": "error",
   "use-isnan": ["error", { enforceForIndexOf: true }],
   "valid-typeof": ["error", { requireStringLiterals: true }],
-  "vars-on-top": "error",
+  "vars-on-top": "warn",
   yoda: "warn",
 } satisfies Partial<ESLintRules>;

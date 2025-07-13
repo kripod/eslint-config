@@ -26,7 +26,7 @@ const tseslintRules = {
   "@typescript-eslint/consistent-generic-constructors": "warn",
   "@typescript-eslint/consistent-indexed-object-style": "off",
   "@typescript-eslint/consistent-type-assertions": [
-    "error",
+    "warn",
     {
       arrayLiteralTypeAssertions: "allow-as-parameter",
       objectLiteralTypeAssertions: "allow-as-parameter",
@@ -100,7 +100,7 @@ const tseslintRules = {
   "@typescript-eslint/no-magic-numbers": "off",
 
   "@typescript-eslint/no-misused-new": "error",
-  "@typescript-eslint/no-namespace": "error",
+  "@typescript-eslint/no-namespace": "warn",
   "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
   "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
   "@typescript-eslint/no-non-null-assertion": "warn",
@@ -115,11 +115,11 @@ const tseslintRules = {
   // Covered by core rule
   "@typescript-eslint/no-shadow": "off",
 
-  "@typescript-eslint/no-this-alias": "error",
+  "@typescript-eslint/no-this-alias": "warn",
   "@typescript-eslint/no-unnecessary-parameter-property-assignment": "warn",
   "@typescript-eslint/no-unnecessary-type-constraint": "warn",
   "@typescript-eslint/no-unsafe-declaration-merging": "error",
-  "@typescript-eslint/no-unsafe-function-type": "error",
+  "@typescript-eslint/no-unsafe-function-type": "warn",
 
   // Covered by core rule
   "@typescript-eslint/no-unused-expressions": "off",
@@ -135,7 +135,7 @@ const tseslintRules = {
 
   "@typescript-eslint/no-useless-empty-export": "warn",
   "@typescript-eslint/no-wrapper-object-types": "error",
-  "@typescript-eslint/parameter-properties": "error",
+  "@typescript-eslint/parameter-properties": "warn",
   "@typescript-eslint/prefer-as-const": "warn",
   "@typescript-eslint/prefer-enum-initializers": "warn",
   "@typescript-eslint/prefer-for-of": "warn",
@@ -145,7 +145,7 @@ const tseslintRules = {
     { allowBitwiseExpressions: true },
   ],
   "@typescript-eslint/prefer-namespace-keyword": "warn",
-  "@typescript-eslint/triple-slash-reference": "error",
+  "@typescript-eslint/triple-slash-reference": "warn",
   "@typescript-eslint/typedef": "off",
   "@typescript-eslint/unified-signatures": [
     "warn",
