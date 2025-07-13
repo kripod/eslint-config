@@ -42,15 +42,7 @@ export default defineConfig([
       "no-implied-eval": "off",
       "@typescript-eslint/no-implied-eval": coreRules["no-implied-eval"],
       "@typescript-eslint/no-meaningless-void-operator": "warn",
-      "@typescript-eslint/no-misused-promises": [
-        "error",
-        {
-          checksVoidReturn: {
-            arguments: false,
-            attributes: false,
-          },
-        },
-      ],
+      "@typescript-eslint/no-misused-promises": "error",
       "@typescript-eslint/no-misused-spread": "error",
       "@typescript-eslint/no-mixed-enums": "error",
       "@typescript-eslint/no-redundant-type-constituents": "warn",
